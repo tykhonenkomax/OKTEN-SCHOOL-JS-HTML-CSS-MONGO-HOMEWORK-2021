@@ -1,0 +1,77 @@
+.cubBlock1{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+.cubBlock2{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+.box1  {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 25px 25px 0px 0px black;
+
+}
+.box2 {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 4px 4px black;
+}
+.box3  {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 5px 5px #707070;
+}
+.box4  {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 20px 20px 5px 5px #b7b7b7;
+}
+.box5  {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 20px 20px 5px 5px #545454;
+
+}
+.box6  {
+    width: 200px;
+    height: 200px;
+    background: #d9aa3d;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 20px 20px 5px 5px #8c8c8c;
+}
