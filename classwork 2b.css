@@ -23,7 +23,12 @@ body{
     font-family: Calibri;
 
 }
-.button2{
+.button1:hover{
+    border: 6px solid rgb(162, 106, 0);
+    color: rgb(255, 212, 70);
+}
+
+.button2 {
     width: 350px;
     height: 110px;
     margin: 50px;
@@ -32,12 +37,16 @@ body{
     border: 6px solid rgba(52, 169, 189, 0.76);
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     font-size: 35px;
     font-family: Calibri;
-
 }
-.button3{
+.button2:hover{
+    border: 6px solid rgba(31, 109, 128, 0.76);
+    color: rgba(44, 217, 245, 0.76);
+}
+
+.button3 {
     width: 350px;
     height: 110px;
     margin: 50px;
@@ -46,11 +55,16 @@ body{
     border: 6px solid rgba(207, 60, 218, 0.76);
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     font-size: 35px;
     font-family: Calibri;
-
 }
+.button3:hover{
+    border: 6px solid rgba(161, 11, 123, 0.55);
+    color: rgba(244, 0, 255, 0.7);
+}
+
+
 .button4{
     width: 350px;
     height: 110px;
@@ -63,5 +77,11 @@ body{
     align-items: center ;
     font-size: 35px;
     font-family: Calibri;
-
+}
+.button4:hover{
+    border: 6px solid rgba(224, 50, 90, 0.37);
+    color: rgba(255, 0, 0, 0.55);
+}
+.lag{
+    margin-right: 50px;
 }
