@@ -1,0 +1,172 @@
+body {
+    background: url("EH_fulldome_CH__05233.png");
+}
+
+.mother{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 350px;
+    justify-content: space-around;
+}
+
+
+.father{
+    display: flex;
+    margin-top: 200px;
+    padding-left: 350px;
+
+
+
+}
+
+.round1{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    right: 70px;
+    background: black;
+}
+.round2{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    right: 200px;
+    background: black;
+}
+.round3{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    right: 315px;
+    background: black;
+
+}
+
+
+.box1{
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+
+
+
+
+
+}
+.box1Small{
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    margin-left: 70px;
+    margin-top: 200px;
+    color: white;
+    font-family: Tahoma;
+
+
+
+
+}
+.box2{
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color:transparent;
+    border: 2px solid white;
+    margin-left: 25px;
+    color: white;
+
+
+}
+.box2Small{
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    margin-left: 70px;
+    margin-top: 200px;
+    color: white;
+    font-family: Tahoma;
+
+}
+.box3{
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color:transparent;
+    border: 2px solid white;
+    margin-left: 25px;
+    color: white;
+
+}
+.box3Small{
+    box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    margin-left: 70px;
+    margin-top: 200px;
+    color: white;
+    font-family: Tahoma;
+
+}
+.box1Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+
+
+}
+.box2Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+
+}
+.box3Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+    position: relative;
+
+}
+
+.box1>p{
+font-family: Tahoma;
+
+}
+.box2>p{
+    font-family: Tahoma;
+}
+.box3>p{
+    font-family: Tahoma;
+}
+.box1>h3{
+    font-family: Tahoma;
+
+}
+.box2>h3{
+    font-family: Tahoma;
+}
+.box3>h3{
+    font-family: Tahoma;
+}
