@@ -2,18 +2,13 @@ body {
     background: url("EH_fulldome_CH__05233.png");
 }
 
-.mother{
-    display: flex;
-    margin-top: 100px;
-    padding-left: 350px;
-    justify-content: space-around;
-}
+
 
 
 .father{
     display: flex;
-    margin-top: 200px;
-    padding-left: 350px;
+    justify-content: center;
+    margin-top: 400px;
 
 
 
@@ -26,61 +21,91 @@ body {
     background-color:black;
     border: 2px solid white;
     border-radius: 50%;
-    position: relative;
-    top: 250px;
-    right: 70px;
     background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .round2{
     box-sizing: border-box;
     height: 150px;
     width: 150px;
-    background-color:transparent;
+    background-color:black;
     border: 2px solid white;
     border-radius: 50%;
-    position: relative;
-    top: 250px;
-    right: 200px;
     background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 .round3{
     box-sizing: border-box;
     height: 150px;
     width: 150px;
-    background-color:transparent;
+    background-color:black;
     border: 2px solid white;
     border-radius: 50%;
-    position: relative;
-    top: 250px;
-    right: 315px;
     background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 
-.box1{
+.box1 {
     box-sizing: border-box;
     height: 400px;
     width: 300px;
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid white;
     color: white;
-
-
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
+.box1>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+.box2>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+.box3>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+h3{
+    text-transform:uppercase;
+}
+
+
+
 .box1Small{
     box-sizing: border-box;
     height: 50px;
     width: 150px;
     background-color:transparent;
     border: 2px solid white;
-    margin-left: 70px;
-    margin-top: 200px;
     color: white;
     font-family: Tahoma;
+
+
 
 
 
@@ -90,10 +115,14 @@ body {
     box-sizing: border-box;
     height: 400px;
     width: 300px;
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid white;
-    margin-left: 25px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
 
 
 }
@@ -103,8 +132,6 @@ body {
     width: 150px;
     background-color:transparent;
     border: 2px solid white;
-    margin-left: 70px;
-    margin-top: 200px;
     color: white;
     font-family: Tahoma;
 
@@ -113,10 +140,15 @@ body {
     box-sizing: border-box;
     height: 400px;
     width: 300px;
-    background-color:transparent;
+    background-color: transparent;
     border: 2px solid white;
-    margin-left: 25px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+
 
 }
 .box3Small{
@@ -126,8 +158,6 @@ body {
     width: 150px;
     background-color:transparent;
     border: 2px solid white;
-    margin-left: 70px;
-    margin-top: 200px;
     color: white;
     font-family: Tahoma;
 
@@ -146,27 +176,6 @@ body {
 .box3Small>p{
     box-sizing: border-box;
     margin-left: 35px;
-    position: relative;
 
 }
 
-.box1>p{
-font-family: Tahoma;
-
-}
-.box2>p{
-    font-family: Tahoma;
-}
-.box3>p{
-    font-family: Tahoma;
-}
-.box1>h3{
-    font-family: Tahoma;
-
-}
-.box2>h3{
-    font-family: Tahoma;
-}
-.box3>h3{
-    font-family: Tahoma;
-}
