@@ -1,0 +1,181 @@
+body {
+    background: url("../../EH_fulldome_CH__05233.png");
+}
+
+
+
+
+.father{
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+
+
+
+}
+
+.round1{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.round2{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.round3{
+    box-sizing: border-box;
+    height: 150px;
+    width: 150px;
+    background-color:black;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: black;
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.box1 {
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+.box2>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+.box3>p{
+    margin-inline-start: 5%;
+    font-family: Tahoma;
+    font-size: 15px;
+}
+h3{
+    text-transform:uppercase;
+}
+
+
+
+.box1Small{
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: Tahoma;
+
+
+
+
+
+
+}
+.box2{
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+
+
+}
+.box2Small{
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: Tahoma;
+
+}
+.box3{
+    box-sizing: border-box;
+    height: 400px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+
+
+}
+.box3Small{
+    box-sizing: border-box;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    background-color:transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: Tahoma;
+
+}
+.box1Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+
+
+}
+.box2Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+
+}
+.box3Small>p{
+    box-sizing: border-box;
+    margin-left: 35px;
+
+}
+

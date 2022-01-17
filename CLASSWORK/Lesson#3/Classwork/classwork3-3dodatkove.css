@@ -1,0 +1,233 @@
+body{
+    background: cadetblue;
+}
+/************ВЫПАДАЙКА**********************/
+
+.mainmenubtn {
+    background-color: #d9aa3d;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    height: 50px;
+    width: 170px;
+    padding:15px;
+    margin-top:4px;
+}
+
+.mainmenubtn:hover {
+    background-color: #000000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: #bb9337;
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+
+
+/************БОКИ **********************/
+.header {
+    box-sizing:border-box;
+    height: 100px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/************БОКИ 1**********************/
+.headerAsmall{
+    box-sizing: border-box;
+    height: 50px;
+    width: 170px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.headerBsmall{
+    box-sizing: border-box;
+    height: 50px;
+    width: 170px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-right: 5%;
+
+}
+
+/************БОКИ 2**********************/
+
+.header2{
+    box-sizing: border-box;
+    height: 250px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header2aSmall {
+    box-sizing: border-box;
+    height: 200px;
+    width: 700px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/************БОКИ 3**********************/
+
+.header3 {
+    box-sizing: border-box;
+    height: 800px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.header3aSmall {
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-top: 6%;
+}
+
+
+/************БОКИ 4**********************/
+
+.header4 {
+    box-sizing: border-box;
+    height: 800px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.header4aSmall {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-top: 6%;
+}
+.header5bSmall {
+    box-sizing: border-box;
+    height: 50px;
+    width: 200px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-top: 6%;
+}
+
+
+
+/************БОКИ 5**********************/
+
+
+.header5 {
+    box-sizing: border-box;
+    height: 400px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.a{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.a1{
+    box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100px;
+    width: 450px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-top: 5%;
+
+
+}
+.b1{
+    box-sizing: border-box;
+    height: 345px;
+    width: 270px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    display: flex;
+    margin-top: 3%;
+}
+
+/************БОКИ 6**********************/
+
+.header6 {
+    box-sizing: border-box;
+    height: 200px;
+    width: 800px;
+    background: white;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.b2{
+    box-sizing: border-box;
+    height: 50px;
+    width: 300px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    display: flex;
+    margin-top: 3%;
+}
+.b3{
+    box-sizing: border-box;
+    height: 70px;
+    width: 250px;
+    background: #d9aa3d;
+    border: 2px solid grey;
+    margin-top: 3%;
+
+    flex-wrap: wrap;
+}
