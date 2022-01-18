@@ -1,0 +1,133 @@
+body{
+    background: black;
+
+}
+.boxSizing{
+    box-sizing: border-box;
+}
+.background-light{
+    background: #cdd7e0;
+}
+.background-dark{
+background: #102b3e;
+}
+.background-blueNeon{
+    background: #709cb4;
+}
+.border-r-10{
+    border-radius: 10px;
+}
+.border-r-50{
+    border-radius: 50%;
+}
+.solidNeon{
+    border: 3px solid #709bb3;
+}
+
+
+
+
+
+
+/**********************************************************/
+.father{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+/************************************************************/
+
+.fatherSon1{
+    height: 250px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fatherSon1-1{
+    height: 200px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box1{
+    height: 90px;
+    width: 17%;
+}
+
+
+/**************************************************************/
+.fatherSon2{
+    height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.fatherSon2Box1{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.fatherSon2Box2 {
+    height: 250px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.fatherSon2round{
+    height: 150px;
+    width: 50%;
+}
+
+.fatherSon2Frame{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.fatherSon3round {
+    height: 150px;
+    width: 100%;
+
+}
+.fatherSon3{
+    height: 30px;
+    width: 50%;
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
