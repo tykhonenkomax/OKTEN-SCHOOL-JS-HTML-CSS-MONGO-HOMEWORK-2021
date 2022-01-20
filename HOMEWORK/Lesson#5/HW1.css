@@ -1,0 +1,85 @@
+body{
+    background: black;
+
+}
+.brown{
+    background: #676767;
+}
+.solidRadius{
+    border: 1px solid mediumaquamarine;
+    border-radius: 10px;
+}
+
+.boxSizing{
+    box-sizing: border-box;
+}
+.Font{
+    font-size: 40px;
+    font-family: Tahoma;
+    color: #d07c7e;
+}
+
+.displayF{
+    display: flex;
+}
+.flexDC{
+    flex-direction: column;
+}
+.flexJ-C-AI-C{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.ador1{
+    height: 200px;
+    width: 300px;
+}
+.ador2{
+    height: 200px;
+    width: 1200px;
+}
+
+
+
+.hate1{
+    height: 800px;
+    width: 300px;
+}
+.hate2{
+    height: 100px;
+    width: 300px;
+}
+.hate3{
+    height: 100px;
+    width: 300px;
+}
+
+
+.enjoy1{
+    height: 400px;
+    width: 800px;
+}
+.enjoy2{
+    height: 600px;
+    width: 800px;
+}
+
+
+.beInto1{
+    height: 400px;
+    width: 400px;
+}
+.beInto2{
+    height: 600px;
+    width: 400px;
+}
+
+
+
+
+.fatherLike5{
+    height: 200px;
+    width: 1500px;
+}
