@@ -1,86 +1,163 @@
-body{
-
-    background: #724923;
-    margin: 0;
-}
-.background{
-background: grey;
-}
-.solid-borBox{
-    border: 3px solid white;
+.solid{
     border-radius: 10px;
     box-sizing: border-box;
+    border: 3px solid #6e6e6e;
 }
 
-.flex{
-    display: flex;
+
+body {
+    background: black;
 }
-.center{
+
+.flex {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.font{
-    font-family: Tahoma;
+.font {
     font-size: 50px;
+    font-family: Tahoma;
     color: white;
 }
-/**********************************************************************/
-.father-one {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 10px;
-}
 
-.son-one {
-    min-height: 150px;
-    width: 100%;
-}
-.son-two {
-    min-height: 530px;
+
+.father {
     width: 70%;
+    height: 410px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 3px solid #6e6e6e;
+    background: white;
 
 }
-.son-three {
-    min-height: 530px;
-    width: 30%;
+
+.a {
+    width: 100%;
+    height: 100px;
+    background: grey;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
+.aa{
+    display: flex;
+
+}
+
+.b {
+    width: 80%;
+    height: 300px;
+    /*background: grey;*/
+    /*border: 3px solid #ffffff;*/
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.b1 {
+    width: 100%;
+    height: 120px;
+    background: grey;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.b2 {
+
+    width: 33.3%;
+    height: 165px;
+    background: grey;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+
+.c {
+    width: 20%;
+    height: 300px;
+    background: grey;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+/**************************************************************/
+@media screen and (min-width: 768px) and (max-width: 992px) {
 
     body {
-        background: #5d3333;
+        background: #6f8853;
     }
 
-    .father-one {
-
-        flex-direction: column;
-        max-width: 500px;
+    .father {
+        width: 70%;
+        height: 850px;
         margin: 0 auto;
-        padding: 10px;
-        margin-top: 3%;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border: 3px solid #6e6e6e;
+        background: #e3e3e3;
+
     }
 
 
-    .son-one {
+    .a {
+        height: 120px;
+        margin-top: 1%;
+    }
 
-        min-height: 100px;
+    .aa {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .c {
+
+        margin-top: 25%;
         width: 100%;
+        height: 150px;
+        background: grey;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        box-sizing: border-box;
     }
 
-    .son-two {
-        margin-top: 3%;
-        min-height: 450px;
+    .b {
+        margin-top: 10%;
         width: 100%;
+        height: 300px;
+        background: grey;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
     }
-
-    .father-two {
-        display: block;
-    }
-
-    .son-three {
-        margin-top: 3%;
-        min-height: 150px;
+    .b1 {
         width: 100%;
+        height: 250px;
+        background: grey;
+
+        border-radius: 10px;
+        box-sizing: border-box;
     }
+    .b2 {
+        margin-top: 12%;
+        margin-left: 10%;
+        width: 20%;
+        height: 100px;
+        background: grey;
+        border: 3px solid #ffffff;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
 }
