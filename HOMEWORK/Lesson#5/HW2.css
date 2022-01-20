@@ -1,0 +1,79 @@
+body{
+    background: black;
+}
+.boxS{
+   box-sizing: border-box;
+}
+
+.brown{
+     background: #676767;
+}
+.dFlex{
+    display: flex;
+}
+
+.jc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.jdc {
+    flex-direction: column;
+}
+
+.border{
+    border: 2px solid #c4c2c2;
+}
+
+
+/*********************************************************/
+
+.son1-1{
+    height: 200px;
+    width: 250px;
+}
+.son1-2{
+    height: 200px;
+    width: 1050px;
+}
+
+/*********************************************************/
+
+.june1{
+    height: 800px;
+    width: 250px;
+}
+.june2{
+    height: 200px;
+    width: 250px;
+}
+.june3{
+    height: 200px;
+    width: 250px;
+}
+
+/*********************************************************/
+.june4{
+    height: 400px;
+    width: 800px;
+}
+.june5{
+    height: 800px;
+    width: 800px;
+}
+/*********************************************************/
+.june6{
+    height: 400px;
+    width: 250px;
+}
+.june7{
+    height: 800px;
+    width: 250px;
+}
+/*********************************************************/
+
+.father3{
+    width: 1300px;
+    height: 200px;
+}
