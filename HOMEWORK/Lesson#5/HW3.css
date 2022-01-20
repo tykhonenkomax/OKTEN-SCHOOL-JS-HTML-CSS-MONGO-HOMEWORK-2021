@@ -1,19 +1,22 @@
-body{
+body {
     margin: 0px;
     background: #bdbdbd;
 }
+
 /****************************************************/
 
-.setMeaning{
+.setMeaning {
     border: 2px solid #2c2c2c;
     border-radius: 1%;
     box-sizing: border-box;
     background: grey;
 }
-.height{
+
+.height {
     height: 300px;
 }
-.font{
+
+.font {
     font-family: Tahoma;
     font-size: 45px;
     color: white;
@@ -21,10 +24,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 /****************************************************/
 
@@ -38,26 +37,119 @@ body{
     margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
+}
 
-   }
-.a{
+.a {
     width: 100%;
-  }
-.b{
+}
+
+.b {
     width: 70%;
     height: 600px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
-.b-1{
-width: 33.3%;
+
+.b-1 {
+    width: 33.3%;
     height: 300px;
-
 }
 
-
-
-.c{
+.c {
     width: 30%;
     height: 600px;
 }
+
+/*********************************************************************/
+
+@media screen and (min-width: 922px) and (max-width: 1200px) {
+
+    body {
+        background: #fff9ab;
+    }
+
+    .body {
+        height: 1250px;
+        width: 80%;
+        margin: 0;
+        background: #adadad;
+        margin-left: 10%;
+        margin-top: 10%;
+
+    }
+
+    .a {
+        width: 98%;
+        height: 200px;
+        margin-left: 1%;
+        margin-top: 3%;
+
+    }
+
+    .b {
+        width: 70%;
+        height: 600px;
+        margin-left: 15%;
+        grid-row-gap: 5%;
+    }
+
+    .b-1 {
+        margin-left: 2%;
+        width: 30%;
+        height: 220px;
+    }
+
+    .c {
+        width: 98%;
+        height: 300px;
+        margin-left: 1%;
+        margin-bottom: 1%;
+    }
+}
+
+/***********************************************************************/
+
+@media screen and (min-width: 0px) and (max-width: 922px) {
+
+    body {
+        background: #ff8181;
+    }
+
+    .body {
+        height: 1150px;
+        width: 70%;
+        margin: 0;
+        background: #adadad;
+        margin-left: 15%;
+        margin-top: 10%;
+
+    }
+
+    .a {
+        width: 98%;
+        height: 200px;
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+
+    .b {
+        width: 80%;
+        height: 500px;
+        grid-row-gap: 5%;
+        margin-left: 10%;
+    }
+
+    .b-1 {
+        width: 30%;
+        height: 220px;
+    }
+
+    .c {
+        width: 98%;
+        height: 300px;
+        margin-left: 1%;
+    }
+}
+
+
