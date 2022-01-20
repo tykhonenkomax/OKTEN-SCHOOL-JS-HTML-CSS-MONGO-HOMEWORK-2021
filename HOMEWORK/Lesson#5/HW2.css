@@ -1,4 +1,5 @@
 body{
+
     background: #724923;
     margin: 0;
 }
@@ -7,6 +8,7 @@ background: grey;
 }
 .solid-borBox{
     border: 3px solid white;
+    border-radius: 10px;
     box-sizing: border-box;
 }
 
@@ -27,9 +29,6 @@ background: grey;
 .father-one {
     max-width: 1220px;
     margin: 0 auto;
-    border: 4px solid #9b9b9b;
-    border-radius: 10px;
-    box-sizing: border-box;
     padding: 10px;
 }
 
@@ -47,20 +46,41 @@ background: grey;
     width: 30%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 576px){
+@media screen and (min-width: 0px) and (max-width: 576px) {
+
+    body {
+        background: #5d3333;
+    }
 
     .father-one {
+
+        flex-direction: column;
         max-width: 500px;
         margin: 0 auto;
-        border: 4px solid #9b9b9b;
-        border-radius: 10px;
-        box-sizing: border-box;
         padding: 10px;
+        margin-top: 3%;
     }
 
 
-    .son-one{
+    .son-one {
+
         min-height: 100px;
+        width: 100%;
+    }
+
+    .son-two {
+        margin-top: 3%;
+        min-height: 450px;
+        width: 100%;
+    }
+
+    .father-two {
+        display: block;
+    }
+
+    .son-three {
+        margin-top: 3%;
+        min-height: 150px;
         width: 100%;
     }
 }
