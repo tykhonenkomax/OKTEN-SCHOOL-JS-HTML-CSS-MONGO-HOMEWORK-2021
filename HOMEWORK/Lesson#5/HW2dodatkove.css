@@ -21,13 +21,48 @@ body{
 .jdc {
     flex-direction: column;
 }
+.center{
+    justify-content: center;
+    align-items: center;
+}
 
 .border{
     border: 2px solid #c4c2c2;
 }
+.font{
+    font-size: 70px;
+    font-family: Tahoma;
+    color: brown;
+
+}
 
 
-/*********************************************************/
+/***********************************************************/
+@media screen and (min-width: 0px ) and(max-width: 576px){
+    body{
+
+    }
+@media screen and (min-width: 576px ) and(max-width: 768px){
+    body{
+
+    }
+
+@media screen and (min-width: 768px ) and(max-width: 992px){
+    body{
+
+    }
+@media screen and (min-width: 992px ) and(max-width: 1200px){
+        body{
+
+        }
+
+    @media screen and (min-width: 1200px ) and(max-width: 1400px){
+        body{
+
+        }
+
+
+        /*********************************************************/
 
 .son1-1{
     height: 200px;
