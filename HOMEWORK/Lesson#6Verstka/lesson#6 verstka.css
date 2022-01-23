@@ -377,3 +377,146 @@ margin-top: 127px;
 }
 /*****************************************************/
 
+.box9 {
+    margin: 0;
+    width: 1440px;
+    height: 637px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.button9{
+    border: 1px solid transparent;
+    background-color: #f6b1b6;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 50px;
+    width: 140px;
+    color: #000000;
+    margin-top: 79px;
+    margin-left:145px ;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+.button9:active {
+    border: 6px solid rgb(210, 201, 216);
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+.p9{
+    margin-top: 40px;
+    margin-left: 145px;
+}
+.h9{
+    font-weight: bold;
+    font-size: 58px;
+    margin-top: 191px;
+    margin-left: 145px;
+}
+.imgBox9{
+    margin-top: 108px;
+    margin-left:120px ;
+    margin-right: 145px;
+}
+/***************************************************/
+.box10{
+    margin: 0;
+    width: 1440px;
+    height: 499px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+.box10a{
+    margin: 0;
+    width: 1150px;
+    height: 283px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #8BD4D6;
+    border-radius: 10px;
+    margin-left: 145px;
+}
+
+.button10{
+    border: 1px solid transparent;
+    background-color: #000000;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 50px;
+    width: 140px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    position: relative;
+    right: 235px;
+}
+.button10:active {
+    border: 6px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+
+
+}
+.textBox10-1{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 56px;
+    margin-top: 89px;
+    margin-left:90px ;
+}
+.textBox10-2{
+    font-size: 20px;
+    line-height: 31px;
+    margin-top: 18px;
+    margin-left:90px ;
+}
+/****************************************************/
+.box11{
+    margin: 0;
+    width: 1440px;
+    height: 631px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+ }
+.box11a{
+    margin: 0;
+    width: 1440px;
+    height: 145px;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    background: #302e3f;
+}
+.box11a{
+    display: flex;
+}
+.textBox11-1{
+    font-size: 28px;
+    line-height: 36px;
+    color: white;
+    margin-left:18px ;
+}
+
+.imgBox11a{
+    margin-left:145px ;
+}
+.box11b{
+    margin: 0;
+    width: 1440px;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    box-sizing: border-box;
+    background: #302e3f;
+
+}
