@@ -1,0 +1,208 @@
+body{
+    margin-top: 5px;
+    margin-left: 10%;
+    width: 1440px;
+    height: 5109px;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+.solid{
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    }
+.mandatoryMenu{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.h1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 77px;
+    line-height: 83px;
+}
+/***********************************************/
+.header{
+    height: 142px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+.headerA{
+    height: 142px;
+    width: 25%;
+
+}
+.logo{
+    margin-left: 145px;
+}
+
+
+.headerB{
+    height: 142px;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+
+}
+.buttomAll{
+    margin-left:105px;
+    margin-right: 24px;
+
+}
+.b1{
+margin-left: 10px;
+    box-sizing: border-box;
+
+
+}
+.headerC{
+    height: 142px;
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+
+}
+.button1{
+    margin-left: 3%;
+    border: 1px solid #000000;
+    background: transparent;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 52px;
+    width: 96px;
+
+}
+.button1:hover{
+    border: 6px solid rgb(210, 201, 216);
+    color: rgb(0, 0, 0);
+}
+
+.button2{
+    margin-left: 3%;
+    border: 1px solid #000000;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 52px;
+    width: 189px;
+    margin-right: 145px;
+    color: white;
+}
+.button2:active{
+    border: 6px solid rgb(210, 201, 216);
+    color: rgb(255, 255, 255);
+}
+
+
+
+/**********************BOX1******************/
+
+.box1{
+    width: 1440px;
+    height: 576px;
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+
+
+}
+.p1{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+    margin-left:145px ;
+}
+.h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 77px;
+    line-height: 83px;
+    margin-left:145px ;
+    margin-top: 28px;
+
+}
+
+.pBox1{
+    font-weight: bold;
+    margin-left:145px ;
+}
+.imgBox1>img{
+    width:517px;
+    height: auto;
+    margin-left:45px ;
+    width:667px;
+    height: auto;
+
+
+}
+.button3{
+    border: 1px solid #000000;
+    background-color: black;
+    box-sizing: border-box;
+    border-radius: 100px;
+    height: 61px;
+    width: 159px;
+    color: white;
+    margin-top: 27px;
+    font-size: 22px;
+    margin-left:145px ;
+}
+
+/***********************BOX2*******************/
+.box2 {
+    width: 1440px;
+    height: 507px;
+    display: flex;
+    justify-content: start;
+    box-sizing: border-box;
+
+
+}
+.imgBox2{
+    margin-top: 84px;
+    margin-left: 145px;
+}
+.textBox2{
+    margin-top: 52px;
+    margin-left: 104px;
+}
+.p1Box2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 57px;
+    line-height: 58px;
+}
+.p2Box{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 31px;
+}
+
+/*********************************************************/
