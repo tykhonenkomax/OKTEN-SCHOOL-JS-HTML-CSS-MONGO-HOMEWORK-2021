@@ -1,98 +1,105 @@
-body{
-display: flex;
+body {
+    display: flex;
     justify-content: center;
 }
-.borderBox{
+
+.borderBox {
     box-sizing: border-box;
 }
-*{
+
+.height145 {
+    height: 145px;
+}
+
+.margL145 {
+    margin-left: 145px;
+}
+
+* {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     color: black;
     font-style: normal;
     font-weight: normal;
 }
 
-
-a{
+a {
     text-decoration: none;
 }
-.solid{
+
+.solid {
     border: 1px solid rgba(0, 0, 0, 0.75);
-    }
-.mandatoryMenu{
-    box-sizing: border-box;
 }
-.flex{
+
+.flex {
     display: flex;
     align-items: center;
 }
-.h1{
+
+.h1 {
     font-weight: bold;
     font-size: 77px;
     line-height: 83px;
 }
 
-
 /***********************************************/
-.MyBody{
+.MyBody {
     width: 1440px;
     height: 5109px;
     background: white;
     border: 2px solid rgba(0, 0, 0, 0.75);
 }
+
 /***********************************************/
-.header{
-    height: 142px;
+.header {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.headerA{
-    height: 142px;
+
+.headerA {
     width: 25%;
 }
-.logo{
-    margin-left: 145px;
-}
-.headerB{
-    height: 142px;
+
+.headerB {
     width: 40%;
     display: flex;
     align-items: center;
     justify-content: end;
 }
-.buttonAll{
-    margin-left:105px;
+
+.buttonAll {
+    margin-left: 105px;
     margin-right: 24px;
 }
-.b1{
-margin-left: 10px;
+
+.b1 {
+    margin-left: 10px;
 }
-.headerC{
-    height: 142px;
+
+.headerC {
     width: 35%;
     display: flex;
     align-items: center;
-
 }
-.button1{
+
+.button1 {
     margin-left: 3%;
     border: 1px solid #000000;
     background: transparent;
     border-radius: 100px;
     height: 52px;
     width: 96px;
-
 }
-.button1:active{
+
+.button1:active {
     border: 6px solid rgb(210, 201, 216);
     color: rgb(255, 255, 255);
     background: black;
 }
 
-.button2{
+.button2 {
     margin-left: 3%;
     border: 1px solid #000000;
     background-color: black;
@@ -102,44 +109,43 @@ margin-left: 10px;
     margin-right: 145px;
     color: white;
 }
-.button2:active{
+
+.button2:active {
     border: 6px solid rgb(210, 201, 216);
     background: white;
     color: black;
 }
 
 /**********************BOX1******************/
-.box1{
+.box1 {
     width: 1440px;
     height: 576px;
     display: flex;
     justify-content: start;
 }
-.p1{
+
+.p1 {
     font-size: 20px;
     line-height: 31px;
-    margin-left:145px ;
 }
-.h1{
+
+.h1 {
     font-weight: bold;
     font-size: 77px;
     line-height: 83px;
-    margin-left:145px ;
     margin-top: 28px;
-
 }
 
-.pBox1{
+.pBox1 {
     font-weight: bold;
-    margin-left:145px ;
 }
-.imgBox1>img{
-    width:517px;
-    height: auto;
-    margin-left:45px ;
-    width:667px;
+
+.imgBox1 > img {
+    margin-left: 45px;
+    width: 667px;
 }
-.button3{
+
+.button3 {
     border: 1px solid #000000;
     background-color: black;
     border-radius: 100px;
@@ -148,87 +154,91 @@ margin-left: 10px;
     color: white;
     margin-top: 27px;
     font-size: 22px;
-    margin-left:145px ;
 }
-.button3:active{
+
+.button3:active {
     background: white;
     color: black;
     border: 6px solid rgb(210, 201, 216);
 }
 
 /***********************BOX2*******************/
-.box2{
+.box2 {
     width: 1440px;
     height: 507px;
     display: flex;
     justify-content: start;
-    }
-.imgBox2{
-    margin-top: 84px;
-    margin-left: 145px;
 }
-.textBox2{
+
+.imgBox2 {
+    margin-top: 84px;
+}
+
+.textBox2 {
     margin-top: 52px;
     margin-left: 104px;
 }
-.p1Box2{
-   font-weight: bold;
+
+.p1Box2 {
+    font-weight: bold;
     font-size: 57px;
     line-height: 58px;
 }
-.p2Box{
+
+.p2Box {
     font-size: 20px;
     line-height: 31px;
 }
 
 /**************************BOX3*******************************/
-.box3{
+.box3 {
     width: 1440px;
-    height: 146px;
     display: flex;
     justify-content: start;
     align-items: end;
-    }
-.textBox3>p{
+}
+
+.textBox3 > p {
     font-weight: bold;
     font-size: 58px;
     line-height: 58px;
-    margin-left: 145px;
-
 }
 
 /**************************BOX4*******************************/
-.box4{
+.box4 {
     width: 1440px;
     height: 445px;
     display: flex;
-
 }
-.textBox4a{
+
+.textBox4a {
     font-size: 18px;
     line-height: 24px;
     margin-top: 82px;
-    margin-left: 145px;
 }
-.textBox4b{
+
+.textBox4b {
     font-size: 18px;
     line-height: 24px;
     margin-top: 82px;
     margin-left: 68px;
 }
-.textBox4c{
+
+.textBox4c {
     font-size: 18px;
     line-height: 24px;
     margin-top: 82px;
     margin-left: 71px;
 }
+
 /**************************BOX5*******************************/
-.box5{
+.box5 {
     width: 1440px;
     height: 200px;
     display: flex;
 }
-.button5{
+
+.button5 {
     border: 1px solid transparent;
     background-color: #f6b1b6;
     border-radius: 100px;
@@ -236,114 +246,117 @@ margin-left: 10px;
     width: 235px;
     color: #000000;
     margin-bottom: 126px;
-    margin-left:145px ;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
 }
-.button5:active{
+
+.button5:active {
     border: 6px solid rgb(210, 201, 216);
     color: rgb(255, 255, 255);
     background: #9ad6d9;
-
 }
+
 /**************************BOX6*******************************/
-
-
-.textBox5>p{
+.textBox5 > p {
     font-size: 58px;
     line-height: 58px;
 }
+
 /**************************BOX7*******************************/
-.box6{
+.box6 {
     width: 1437px;
     height: 200px;
     display: flex;
     box-sizing: border-box;
     background: #fbebec;
 }
-.textBox6>p{
+
+.textBox6 > p {
     font-size: 58px;
     line-height: 58px;
-    margin-left: 145px;
     margin-top: 88px;
 }
+
 /**********************************************************/
-.box7{
+.box7 {
     width: 1437px;
     height: 405px;
     display: flex;
     background: #fbebec;
-
 }
-.textBox7a{
+
+.textBox7a {
     font-size: 18px;
     line-height: 24px;
-    margin-left: 145px;
     margin-bottom: 89px;
-
 }
-.textBox7b{
+
+.textBox7b {
     font-size: 18px;
     line-height: 24px;
     margin-left: 59px;
     margin-bottom: 113px;
 }
 
-.textBox7c{
+.textBox7c {
     font-size: 18px;
     line-height: 24px;
     margin-left: 61px;
     margin-bottom: 113px;
 }
-/*************************************************/
 
-.box8{
+/*************************************************/
+.box8 {
     width: 1440px;
     height: 522px;
     display: flex;
-
 }
-.box8a{
+
+.box8a {
     width: 381px;
     height: 522px;
     display: flex;
-    }
-.box8a>p{
+}
+
+.box8a > p {
     margin-top: 129px;
     margin-left: 145px;
     font-size: 27px;
     line-height: 36px;
 }
+
 .box8b {
     width: 1059px;
     height: 522px;
     display: flex;
     flex-direction: column;
+}
 
+.box8b1 {
+    margin-top: 127px;
+    margin-left: 150px;
 }
-.box8b1{
-margin-top: 127px;
-    margin-left: 132px;
-}
-.box8b2{
+
+.box8b2 {
     margin-top: 10px;
-    margin-left: 132px;
+    margin-left: 150px;
 }
-.box8b3{
+
+.box8b3 {
     margin-top: 10px;
-    margin-left: 132px;
+    margin-left: 150px;
 }
+
 /*****************************************************/
-
 .box9 {
     margin: 0;
     width: 1440px;
     height: 637px;
     display: flex;
-    }
+}
 
-.button9{
+.button9 {
     border: 1px solid transparent;
     background-color: #f6b1b6;
     border-radius: 100px;
@@ -351,53 +364,53 @@ margin-top: 127px;
     width: 140px;
     color: #000000;
     margin-top: 79px;
-    margin-left:145px ;
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
 }
+
 .button9:active {
     border: 6px solid rgb(210, 201, 216);
     color: rgb(0, 0, 0);
     background: #ffffff;
 }
-.p9{
+
+.p9 {
     margin-top: 40px;
-    margin-left: 145px;
 }
-.h9{
+
+.h9 {
     font-weight: bold;
     font-size: 58px;
     margin-top: 191px;
-    margin-left: 145px;
 }
-.imgBox9{
+
+.imgBox9 {
     margin-top: 108px;
-    margin-left:120px ;
+    margin-left: 120px;
     margin-right: 145px;
 }
+
 /***************************************************/
-.box10{
+.box10 {
     margin: 0;
     width: 1440px;
     height: 499px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.box10a{
-    margin:0px;
+
+.box10a {
     width: 1150px;
     height: 283px;
     display: flex;
     flex-direction: column;
     background: #8BD4D6;
     border-radius: 10px;
-    margin-left: 145px;
 }
 
-.button10{
+.button10 {
     border: 1px solid transparent;
     background-color: #000000;
     border-radius: 100px;
@@ -410,110 +423,152 @@ margin-top: 127px;
     position: relative;
     right: 235px;
 }
+
 .button10:active {
     border: 6px solid rgb(0, 0, 0);
     color: rgb(0, 0, 0);
     background: #ffffff;
-
-
 }
-.textBox10-1{
+
+.textBox10-1 {
     font-weight: bold;
     font-size: 46px;
     line-height: 56px;
     margin-top: 89px;
-    margin-left:90px ;
+    margin-left: 90px;
 }
-.textBox10-2{
+
+.textBox10-2 {
     font-size: 20px;
     line-height: 31px;
     margin-top: 18px;
-    margin-left:90px ;
+    margin-left: 90px;
 }
+
 /****************************************************/
-.box11{
+.box11 {
     margin: 0;
     width: 1440px;
     height: 631px;
     display: flex;
     flex-direction: column;
-     }
-.box11a{
+}
+
+.box11a {
     margin: 0;
     width: 1440px;
-    height: 145px;
     align-items: center;
     display: flex;
     background: #302e3f;
 }
-.box11a{
+
+.box11a {
     display: flex;
 }
-.textBox11-1{
+
+.textBox11-1 {
     font-size: 28px;
     line-height: 36px;
     color: white;
-    margin-left:18px ;
+    margin-left: 18px;
 }
 
-.imgBox11a{
-    margin-left:145px ;
-}
-.box11b{
+.box11b {
     margin: 0;
     width: 1440px;
     height: 200px;
-    align-items:start;
+    align-items: start;
     display: flex;
     justify-content: start;
     background: #302e3f;
 }
-.box11bText1{
-    margin-left: 145px;
-    }
-.box11cText2{
+
+.box11cText2 {
     margin-left: 60px;
 }
-.box11bText3{
+
+.box11bText3 {
     margin-left: 73px;
 }
-.box11bText4{
+
+.box11bText4 {
     margin-left: 72px;
 }
-.box11bText5{
+
+.box11bText5 {
     margin-left: 143px;
 }
-.box11P1{
+
+.box11P1 {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     color: white;
 }
-.box11P2{
+
+.box11P2 {
     font-size: 16px;
     line-height: 16px;
     color: #C5E9EA;
 }
-.box12{
+
+/******************************************************************/
+.box12 {
     margin: 0;
     width: 1440px;
     height: 183px;
     display: flex;
     flex-direction: column;
     background: #302e3f;
-
 }
-.box12P1{
+
+.box12P1 {
     font-weight: bold;
     font-size: 18px;
     line-height: 25px;
     color: white;
-    margin-left: 145px;
 }
-.box12P2{
+
+.box12P2 {
     font-size: 16px;
     line-height: 22px;
     color: #c5e9ea;
-    margin-left: 145px;
 }
+
+/******************************************************************/
+.box13 {
+    display: flex;
+}
+
+.box13a {
+    margin: 0;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    background: #302e3f;
+}
+
+.box13P1 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #c5e9ea;
+}
+
+.box13P2 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #c5e9ea;
+    margin-left: 27px;
+}
+
+.box13b {
+    margin: 0;
+    width: 740px;
+    height: 100px;
+    display: flex;
+    background: #302e3f;
+}
+
+.box13P3 {
+    margin-left: 521px;
 }
