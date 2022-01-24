@@ -1,20 +1,19 @@
 body{
-    margin-top: 5px;
-    margin-left: 10%;
-    width: 1440px;
-    height: 5109px;
-    background: white;
-    border: 2px solid rgba(0, 0, 0, 0.75);
+display: flex;
+    justify-content: center;
+}
+.borderBox{
     box-sizing: border-box;
 }
 *{
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     color: black;
     font-style: normal;
     font-weight: normal;
 }
+
 
 a{
     text-decoration: none;
@@ -30,57 +29,50 @@ a{
     align-items: center;
 }
 .h1{
-    font-family: Roboto;
-    font-style: normal;
     font-weight: bold;
     font-size: 77px;
     line-height: 83px;
 }
 
+
+/***********************************************/
+.MyBody{
+    width: 1440px;
+    height: 5109px;
+    background: white;
+    border: 2px solid rgba(0, 0, 0, 0.75);
+}
 /***********************************************/
 .header{
     height: 142px;
     width: 100%;
     display: flex;
     justify-content: center;
-
-
 }
 .headerA{
     height: 142px;
     width: 25%;
-
 }
 .logo{
     margin-left: 145px;
 }
-
-
 .headerB{
     height: 142px;
     width: 40%;
-
     display: flex;
     align-items: center;
     justify-content: end;
-
-
 }
-.buttomAll{
+.buttonAll{
     margin-left:105px;
     margin-right: 24px;
-
 }
 .b1{
 margin-left: 10px;
-    box-sizing: border-box;
-
-
 }
 .headerC{
     height: 142px;
     width: 35%;
-
     display: flex;
     align-items: center;
 
@@ -89,7 +81,6 @@ margin-left: 10px;
     margin-left: 3%;
     border: 1px solid #000000;
     background: transparent;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 52px;
     width: 96px;
@@ -97,16 +88,14 @@ margin-left: 10px;
 }
 .button1:active{
     border: 6px solid rgb(210, 201, 216);
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     background: black;
-    color: white;
 }
 
 .button2{
     margin-left: 3%;
     border: 1px solid #000000;
     background-color: black;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 52px;
     width: 189px;
@@ -115,27 +104,18 @@ margin-left: 10px;
 }
 .button2:active{
     border: 6px solid rgb(210, 201, 216);
-    color: rgb(255, 255, 255);
     background: white;
     color: black;
-
 }
 
-
-
 /**********************BOX1******************/
-
 .box1{
     width: 1440px;
     height: 576px;
     display: flex;
     justify-content: start;
-    box-sizing: border-box;
-
-
 }
 .p1{
-    font-family: Roboto;
     font-size: 20px;
     line-height: 31px;
     margin-left:145px ;
@@ -158,14 +138,10 @@ margin-left: 10px;
     height: auto;
     margin-left:45px ;
     width:667px;
-    height: auto;
-
-
 }
 .button3{
     border: 1px solid #000000;
     background-color: black;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 61px;
     width: 159px;
@@ -178,19 +154,15 @@ margin-left: 10px;
     background: white;
     color: black;
     border: 6px solid rgb(210, 201, 216);
-    color: black;
 }
 
 /***********************BOX2*******************/
-.box2 {
+.box2{
     width: 1440px;
     height: 507px;
     display: flex;
     justify-content: start;
-    box-sizing: border-box;
-
-
-}
+    }
 .imgBox2{
     margin-top: 84px;
     margin-left: 145px;
@@ -216,8 +188,7 @@ margin-left: 10px;
     display: flex;
     justify-content: start;
     align-items: end;
-    box-sizing: border-box;
-}
+    }
 .textBox3>p{
     font-weight: bold;
     font-size: 58px;
@@ -231,7 +202,6 @@ margin-left: 10px;
     width: 1440px;
     height: 445px;
     display: flex;
-    box-sizing: border-box;
 
 }
 .textBox4a{
@@ -257,12 +227,10 @@ margin-left: 10px;
     width: 1440px;
     height: 200px;
     display: flex;
-    box-sizing: border-box;
 }
 .button5{
     border: 1px solid transparent;
     background-color: #f6b1b6;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 50px;
     width: 235px;
@@ -305,7 +273,6 @@ margin-left: 10px;
     width: 1437px;
     height: 405px;
     display: flex;
-    box-sizing: border-box;
     background: #fbebec;
 
 }
@@ -335,15 +302,13 @@ margin-left: 10px;
     width: 1440px;
     height: 522px;
     display: flex;
-    box-sizing: border-box;
 
 }
 .box8a{
     width: 381px;
     height: 522px;
     display: flex;
-    box-sizing: border-box;
-}
+    }
 .box8a>p{
     margin-top: 129px;
     margin-left: 145px;
@@ -355,7 +320,6 @@ margin-left: 10px;
     height: 522px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 
 }
 .box8b1{
@@ -377,13 +341,11 @@ margin-top: 127px;
     width: 1440px;
     height: 637px;
     display: flex;
-    box-sizing: border-box;
-}
+    }
 
 .button9{
     border: 1px solid transparent;
     background-color: #f6b1b6;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 50px;
     width: 140px;
@@ -422,16 +384,14 @@ margin-top: 127px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
 
 }
 .box10a{
-    margin: 0;
+    margin:0px;
     width: 1150px;
     height: 283px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     background: #8BD4D6;
     border-radius: 10px;
     margin-left: 145px;
@@ -440,7 +400,6 @@ margin-top: 127px;
 .button10{
     border: 1px solid transparent;
     background-color: #000000;
-    box-sizing: border-box;
     border-radius: 100px;
     height: 50px;
     width: 140px;
@@ -478,15 +437,13 @@ margin-top: 127px;
     height: 631px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
- }
+     }
 .box11a{
     margin: 0;
     width: 1440px;
     height: 145px;
     align-items: center;
     display: flex;
-    box-sizing: border-box;
     background: #302e3f;
 }
 .box11a{
@@ -506,12 +463,34 @@ margin-top: 127px;
     margin: 0;
     width: 1440px;
     height: 200px;
-    align-items: center;
+    align-items:start;
     display: flex;
-    justify-content: center;
-    align-items: start;
-
-    box-sizing: border-box;
+    justify-content: start;
     background: #302e3f;
-
+}
+.box11bText1{
+    margin-left: 145px;
+    }
+.box11cText2{
+    margin-left: 60px;
+}
+.box11bText3{
+    margin-left: 73px;
+}
+.box11bText4{
+    margin-left: 72px;
+}
+.box11bText5{
+    margin-left: 143px;
+}
+.box11P1{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+}
+.box11P2{
+    font-size: 16px;
+    line-height: 16px;
+    color: #C5E9EA;
 }
