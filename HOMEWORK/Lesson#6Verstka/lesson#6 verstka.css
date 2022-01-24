@@ -494,3 +494,26 @@ margin-top: 127px;
     line-height: 16px;
     color: #C5E9EA;
 }
+.box12{
+    margin: 0;
+    width: 1440px;
+    height: 183px;
+    display: flex;
+    flex-direction: column;
+    background: #302e3f;
+
+}
+.box12P1{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+    margin-left: 145px;
+}
+.box12P2{
+    font-size: 16px;
+    line-height: 22px;
+    color: #c5e9ea;
+    margin-left: 145px;
+}
+}
