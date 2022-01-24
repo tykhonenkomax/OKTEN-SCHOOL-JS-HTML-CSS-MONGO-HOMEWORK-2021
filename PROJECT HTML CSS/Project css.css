@@ -1,0 +1,140 @@
+.bodyGeneral{
+    height:8371px;
+    background: #fdfdfe;
+    margin: 0 0 0 20%;
+}
+*{font-family: 'Dosis', sans-serif;'Roboto', sans-serif;}
+
+.fontSmall{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.fontMedium{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+}
+.fontLage{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 40px;
+}
+.fontExtraLarge{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 48px;
+}
+.fontExtraExtraLarge{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 64px;
+}
+.marginL_148{
+    margin-left: 148px;
+}
+.withGeneral{
+    width: 1440px;
+}
+.solid{
+    border: 1px solid black;
+}
+.flexDisplay{
+    display: flex;
+}
+.alignIteamsC{
+    align-items: center;
+}
+
+.box-sizing{
+    box-sizing: border-box;
+}
+/*--------------------------------------------------------*/
+.header{
+height: 83px;
+}
+.header_P1{
+    margin-left: 36px;
+}
+.header_P2{
+    margin-left: 170px;
+}
+.header_P3{
+    margin-left: 48px;
+}
+.header_P4{
+    margin-left: 8px;
+}
+.header_P5{
+    margin-left: 40px;
+}
+.header_P6{
+    margin-left: 8px;
+}
+.header_P7{
+    margin-left: 40px;
+}
+.header_P8{
+    margin-left: 8px;
+}
+.header_P9{
+    margin-left: 40px;
+}
+.header_P10{
+    margin-left: 177px;
+}
+.header_P11{
+    margin-left: 24px;
+}
+.buttonHeader_1{
+    width: 163px;
+    height: 54px;
+    color: white;
+    margin-left: 24px;
+    background: #0B2330;
+    border: 1px solid #0B2330;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+/*_______________________________________*/
+
+
+.box_1_a{
+    height: 886px;
+    width: 840px;
+}
+.box_1_b{
+    height: 886px;
+    width: 600px;
+}
+.box_1_b_img_right{
+    z-index: auto;
+    position: relative;
+    top: -85%;
+    right: 102px;
+}
+.box_1_a_Text1{
+   margin-top: 237px;
+}
+.button_box_1_c_1{
+    width: 163px;
+    height: 54px;
+    background: #F9C600;
+    border: 1px solid #F9C600;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.button_box_1_c_2{
+    width: 156px;
+    height: 54px;
+    border: 1px solid #0B2330;
+    border-radius: 4px;
+    margin-left: 16px;
+}
+/*_______________________________________*/
+
