@@ -2,6 +2,7 @@
     height: 9467px;
     background: #fdfdfe;
     margin: 0 0 0 12%;
+
 }
 
 * {
@@ -443,6 +444,7 @@ letter-spacing: 0.42px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #61757E;
+    border: solid transparent;
 }
 
 .button_box7_3 {
@@ -455,6 +457,7 @@ letter-spacing: 0.42px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #61757E;
+    border: solid transparent;
 }
 
 .button_box7_4 {
@@ -467,6 +470,7 @@ letter-spacing: 0.42px;
     letter-spacing: 1.2px;
     text-transform: uppercase;
     color: #0B2330;
+    border: solid transparent;
 }
 
 /*____________________________*/
