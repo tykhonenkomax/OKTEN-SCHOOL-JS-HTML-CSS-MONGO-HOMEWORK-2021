@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    width: 500px;
+    border: 1px solid #050505;
+    display: flex;
+    justify-content: center;
+
+
+}
+:root {
+    --color1: #fff100;
+}
+
+p{
+    font-family: Tahoma;
+    font-size: 25px;
+    color: var(--color1);
+}
+.container2{
+    background: var(--color1);
+    height: 500px;
+    width: 500px;
+    border: 1px solid #050505;
+    display: flex;
+    justify-content: center;
+}
