@@ -1,12 +1,22 @@
 //
 // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor).
 // Скласти результат цих чисел в змінній result.
+
+// вариан №1
+
 let result = 0;
 let mass = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-for ( i = 0; i <11; i++){
-   result += i;
+for ( i = 0; i <mass.length; i++){
+   result =result + (mass[i]);
 }
 console.log(result);
+
+// вариан №2
+
+let mass = [34,71.2, 13, 44, 15, 26, 17, 38, 19, 10.3];
+let result = (mass[0] + mass[1] + mass[2] + mass[3]+ mass[4] + mass[5]+ mass[6]+ mass[7]+ mass[8]+ mass[9]);
+console.log(Math.floor(result));
+
 
 // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
 
@@ -37,7 +47,7 @@ console.log(bookMass[1]);
 
 let height = 23;
 let width = 10;
-let s = ((height*width)/2);
+let s = (height*width);
 console.log(s);
 
 
