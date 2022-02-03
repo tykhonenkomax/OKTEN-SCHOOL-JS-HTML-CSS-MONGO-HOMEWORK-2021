@@ -13,9 +13,9 @@
 
 // вариан №2
 
-let mass = [34,71.2, 13, 44, 15, 26, 17, 38, 19, 10.3];
-let result = mass[0] + mass[1] + mass[2] + mass[3]+ mass[4] + mass[5]+ mass[6]+ mass[7]+ mass[8]+ mass[9];
-console.log(Math.floor(result));
+// let mass = [34,71.2, 13, 44, 15, 26, 17, 38, 19, 10.3];
+// let result = mass[0] + mass[1] + mass[2] + mass[3]+ mass[4] + mass[5]+ mass[6]+ mass[7]+ mass[8]+ mass[9];
+// console.log(Math.floor(result));
 
 
 // 2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
