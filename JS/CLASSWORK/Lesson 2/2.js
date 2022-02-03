@@ -105,4 +105,3 @@
 //         console.log('Well, the number is wrong - Wake up is a terrible dream');
 // }
 
-/ напишіть це тернарним оператором
