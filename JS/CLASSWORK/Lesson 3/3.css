@@ -1,4 +1,5 @@
-/*_________________________________Вариант 1_______________________________________________*/
+
+/*_________________________________template 2.1_______________________________________________*/
 
 
 .allBox{
@@ -12,12 +13,12 @@
     box-sizing: border-box;
     border: 1px solid grey;
     width: 200px;
-    height: 300px;
-    font-family: Tahoma;
+    height: 310px;
     font-size: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5px;
 }
 .a{
     font-size: 16px;
@@ -31,8 +32,11 @@
 .e{
     height: 150px;
 }
+.span2_1{
+font-size: 13px;
+}
 
-/*_________________________________Вариант 2_______________________________________________*/
+/*_________________________________template 2.2_______________________________________________*/
 
 .generalBox{
     display: flex;
@@ -42,13 +46,14 @@ box-sizing: border-box;
 
 }
 .box{
-    width: 195px;
+    width: 200px;
+    height: 310px;
     box-sizing: border-box;
     border: 1px solid dodgerblue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 8px;
+    font-size: 5px;
     margin-top: 5px;
     padding: 5px;
 
@@ -57,18 +62,14 @@ box-sizing: border-box;
     width: 100px;
 }
 
-
-/*___________________________________________________________________________________________________*/
+/*__________________________________________template 3.1_________________________________________________________*/
 .list{
-
 display: flex;
-
 }
 .products{
     display: flex;
     flex-direction: column;
     align-items: center;
-
     justify-content: center;
     border: 1px solid darkolivegreen;
     width: 150px;
@@ -76,7 +77,6 @@ display: flex;
 }
 .img{
     width: 100px;
-
 }
 .span{
     text-transform:uppercase;

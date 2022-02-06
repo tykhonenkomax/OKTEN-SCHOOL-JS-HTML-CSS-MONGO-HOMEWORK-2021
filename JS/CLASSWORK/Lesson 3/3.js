@@ -1,8 +1,9 @@
-/*
-  Використовуючи данні з масиву, за допомоги document.write та циклу
-  побудувати структуру по шаблону template1.1
-  */
+/*/*________________________template 1.1_________________________________________________________________________*/
 
+  // Використовуючи данні з масиву, за допомоги document.write та циклу
+  // побудувати структуру по шаблону template1.1
+  // */
+document.write(`<h3>Item Of Array</h3>`)
 let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 document.write('<ul>')
 for (let i = 0; i < listOfItems.length; i++) {
@@ -58,35 +59,37 @@ let simpsons = [
     },
 ];
 
-/*_________________________________Вариант 1_______________________________________________*/
+/*_________________________________template 2.1 (це циклом For)_______________________________________________*/
 document.write('<div class="allBox">')
 for (let i = 0; i < simpsons.length; i++) {
     document.write(`<div class="allBox2">`)
-    document.write(`<div class="a"> NAME - ${simpsons[i].name} </div>`);
+    document.write(`<div class="a"> <span class="span2_1">NAME- ${simpsons[i].name}</span> </div>`);
     document.write(`<br>`)
-    document.write(`<div class="b"> SURNAME. ${simpsons[i].surname}</div>`);
+    document.write(`<div class="b"> <span class="span2_1">SURNAME- ${simpsons[i].surname}</span></div>`);
     document.write(`<br>`)
-    document.write(`<div class="c"> Age is - ${simpsons[i].age}</div>`);
+    document.write(`<div class="c"> AGE- ${simpsons[i].age}</div>`);
     document.write(`<br> <br>`)
-    document.write(`<div class="d"> ${simpsons[i].info}</div>`);
+    document.write(`<div class="d"> <span class="span2_1">INFO-</span> ${simpsons[i].info}</div>`);
     document.write(`<img class="e" src="${simpsons[i].photo}" alt="photo">`);
     document.write('</div>');
 }
 document.write(`<div>`)
-/*_________________________________Вариант 2_______________________________________________*/
+
+document.write(`<br>`)
+/*_________________________________template 2.2 (це циклом For in)_______________________________________________*/
 document.write(`<div>`)
 
 document.write(`<div class="generalBox">`)
 for (const simpsonsKey in simpsons) {
-    document.write(`<div class="box"> <h1>NAME - ${simpsons[simpsonsKey].name}</h1> 
-<h3>SURNAME. ${simpsons[simpsonsKey].surname}</h3> <h5>Age is - ${simpsons[simpsonsKey].age}</h5>
- <p>${simpsons[simpsonsKey].info}</p> <img class="img" src="${simpsons[simpsonsKey].photo}"> </div>`)
+    document.write(`<div class="box"> <h2>NAME - ${simpsons[simpsonsKey].name}</h2> 
+<h2>SURNAME. ${simpsons[simpsonsKey].surname}</h2> <h3>age is - ${simpsons[simpsonsKey].age}</h3>
+ <p> INFO ${simpsons[simpsonsKey].info}</p> <img class="img" src="${simpsons[simpsonsKey].photo}"> </div>`)
 }
 document.write(`</div>`)
 document.write(`</div>`)
 
 
-/*_________________________________________________________________________________________*/
+/*________________________________________template 3.1_________________________________________________*/
 /*
 Використовуючи данні з масиву, за допомоги document.write та циклу
 побудувати структуру по шаблону template3.1 Зробити адекватну стилізацію
@@ -114,8 +117,10 @@ let products = [
         image: 'https://yogiproducts.com/wp-content/uploads/2009/03/YT-US-CAR-RelaxedMind-C23-202201-V2-3DFront_withGlow-300DPI-1.png'
     },
 ];
+document.write(`<br>`)
 
 document.write(`<div>`)
+
 document.write(`<div class="list">`)
 for (let productsKey in products) {
     document.write(`<div class="products">`)
