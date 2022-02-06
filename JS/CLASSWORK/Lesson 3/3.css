@@ -1,0 +1,84 @@
+/*_________________________________Вариант 1_______________________________________________*/
+
+
+.allBox{
+    width: 600px;
+    height: 500px;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.allBox2{
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 200px;
+    height: 300px;
+    font-family: Tahoma;
+    font-size: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.a{
+    font-size: 16px;
+}
+.b{
+    font-size: 10px;
+}
+.d{
+    padding: 5px;
+}
+.e{
+    height: 150px;
+}
+
+/*_________________________________Вариант 2_______________________________________________*/
+
+.generalBox{
+    display: flex;
+box-sizing: border-box;
+    flex-wrap: wrap;
+
+
+}
+.box{
+    width: 195px;
+    box-sizing: border-box;
+    border: 1px solid dodgerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 8px;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+.img{
+    width: 100px;
+}
+
+
+/*___________________________________________________________________________________________________*/
+.list{
+
+display: flex;
+
+}
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    border: 1px solid darkolivegreen;
+    width: 150px;
+    height: 200px;
+}
+.img{
+    width: 100px;
+
+}
+.span{
+    text-transform:uppercase;
+}
+
