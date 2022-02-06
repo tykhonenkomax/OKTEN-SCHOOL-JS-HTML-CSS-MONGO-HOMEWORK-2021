@@ -52,7 +52,7 @@
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
 
 // let i = 0;
-// while (i < 20) {
+// while (let i < 20) {
 //     document.write(`<h1> ${i} Some Random text </h1>`);
 //     i++;
 // }
@@ -61,7 +61,7 @@
 //
 // let massNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // let i = 0;
-// while (i < massNumber.length) {
+// while (let i < massNumber.length) {
 //    console.log(massNumber[i]);
 //     i++;
 // }
@@ -70,21 +70,21 @@
 
 // let massString = ['mather', 'father', 'brother', 'sister', 'grandmother', 'grandfather', 'aunt', 'tuncle', 'godfather', 'godmother'];
 // let i = 0;
-// while (i<massString.length){
+// while (let i<massString.length){
 //     console.log(massString[i]);
 //     i++;
 // }
 // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 
 // let massAll = ['mather', 1, true, 'sister', 26, 'grandfather', false, 44, 'godfather', 'godmother'];
-// for (i=0; i<massAll.length; i++){
+// for (let i=0; i<massAll.length; i++){
 //     console.log(massAll[i]);
 // }
 // - Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof
 //     вивести тільки булеві елементи
 
 // let massAll2 = ['mather', 1, true, 'sister', 26, 'grandfather', false, 44, 'godfather', 'godmother'];
-// for (i=0; i < massAll2.length; i++) {
+// for (let i=0; i < massAll2.length; i++) {
 //     if (typeof massAll2[i] === 'boolean') {
 //         console.log(massAll2[i]);
 //     }
@@ -93,7 +93,7 @@
 // тільки числові елементи
 
 // let massAll3 = ['mather', 1, true, 'sister', 26, 'grandfather', false, 44, 'godfather', 'godmother'];
-// for (i=0; i < massAll2.length; i++) {
+// for (let i=0; i < massAll2.length; i++) {
 //     if (typeof massAll3[i] === 'number') {
 //         console.log(massAll3[i]);
 //     }
@@ -103,7 +103,7 @@
 // тільки рядкові елементи
 
 // let massAll4 = ['mather', 1, true, 'sister', 26, 'grandfather', false, 44, 'godfather', 'godmother'];
-// for (i=0; i<massAll4.length; i++){
+// for (let i=0; i<massAll4.length; i++){
 //     if (typeof massAll4[i] === 'string'){
 //         console.log(massAll4[i]);
 //     }
@@ -125,40 +125,40 @@
 // mortalKombat[8] = 'Shang Tsung';
 // mortalKombat[9] = 'Reptile';
 //
-// for (i=0; i<mortalKombat.length; i++){
+// for (let i=0; i<mortalKombat.length; i++){
 //     console.log(mortalKombat[i])
 // };
 
 // Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-
-// for (i=0; i<10; i++){
+//
+// for (let i=0; i<10; i++){
 //     console.log(i);
 //     document.write(` Крок № ${i} <br> <br>`);
 // };
 
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
-// for (i=0; i<100; i++){
+// for (let i=0; i<100; i++){
 //     console.log(i);
 //     document.write(` Крок № ${i} <br> <br>`);
 // };
 
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 
-// for (i=0; i<100; i=i+2){
+// for (let i=0; i<100; i=i+2){
 //     console.log(i);
 //     document.write(` Крок № ${i} <br> <br>`);
 // };
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
 
-// for (i=2; i<100; i=i+2){
-//     console.log(i/2);
-//     document.write(` Крок № ${i} <br> <br>`);
-// };
+for (let i=2; i<100; i++){
+    console.log(i % 2 === 0);
+    document.write(` Крок № ${i} <br> <br>`);
+};
 
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
 
-// for (i=1; i<100; i=i+2){
+// for (let i=1; i<100; i=i+2){
 //     console.log(i/2);
 //     document.write(` Крок № ${i} <br> <br>`);
 // };
