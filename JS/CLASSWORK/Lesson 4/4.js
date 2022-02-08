@@ -49,18 +49,16 @@
 // f3(13, 24, 27);
 
 // - створити функцію яка повертає найбільше число з масиву
-// ___________________________________Вариант 1 Так и не вышло___________________________________________
-// function f4(massiv){
-//   console.log(massiv);
-// for (let i =0; i<massiv.length; i++) {
-//   let result = (Math.max(massiv[i]));
-//   console.log(result)
-// }
+// ___________________________________Вариант 1___________________________________________
+// function f41(massiv) {
 //
+//         let result = Math.max.apply(null, massiv);
+//     console.log(result)
 // }
-// f4([1,25,17,45,1025,7396,28,5,856]);
+// f41([1, 25, 17, 45, 1025, 7396, 28, 5000000, 856])
 
-// ___________________________________Вариант 2 Так и не вышло но он скучный)______________________________
+
+// ___________________________________Вариант 2 ______________________________
 // let maxMassive = [1,25,17,45,1025,7396,28,5,856];
 // function f5(a){
 //   let max = a[0];
@@ -75,17 +73,18 @@
 
 // - створити функцію яка повертає найменьше число з масиву
 
-let maxMassive = [1,25,17,45,1025,7396,28,5,856];
-function f5(a){
-  let max = a[0];
-  for (let newA of a) {
-    if(newA<max){
-      max=newA;
-    }
-  }
-  return max;
-}
-console.log(`${f5(maxMassive)}`);
+// let maxMassive = [1,25,17,45,1025,7396,28,5,856];
+// function f5(a){
+//   let max = a[0];
+//   for (let newA of a) {
+//     if(newA<max){
+//       max=newA;
+//     }
+//   }
+//   return max;
+// }
+// let aa = f5(maxMassive);
+// console.log(aa);
 
 
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
@@ -102,10 +101,59 @@ console.log(`${f5(maxMassive)}`);
 
 
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+//
+// let massiveMidle = [1, 25, 17, 45, 1025, 7396, 28, 5, 856];
+//
+// function f7(array) {
+//     let sum = 0;
+//     for (let newArray of array) {
+//         sum = newArray + sum;
+//
+//     }
+//     return sum / array.length;
+// }
+//
+// let result = f7(massiveMidle);
+// console.log(result);
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
 // (Math використовувати заборонено);
+
+// function f8(){
+//     let max = arguments[0];
+//     let min = arguments[0];
+//     for (const newArray of arguments) {
+//        if (newArray>max){
+//            max=newArray;
+//        }  if(newArray<min){
+//
+//            min = newArray;
+//        }
+//     }
+//     console.log(max);
+//     return min;
+// }
+// let minResult = f8(25,16,48,34,27);
+// console.log(minResult);
+
 // - створити функцію яка заповнює масив рандомними числами
+
+
+
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 // - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit. limit - аргумент,
 //     який характеризує кінцеве значення діапазону.
 // - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1]
+
+
+
+
+
+// let x = [-12,-13,-35]
+// function getMaxOfArray(numArray) {
+//   return Math.min.apply(null,  numArray);
+// }
+// let a = getMaxOfArray(x);
+// console.log(a)
+
+
