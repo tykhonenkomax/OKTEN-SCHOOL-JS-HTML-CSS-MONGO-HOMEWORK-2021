@@ -36,7 +36,7 @@
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
 
-// //
+
 // let mass = [{name: 'Dima', age: 13}, {model: 'Camry'}];
 // function f3(array){
 //     let massNew =[];
@@ -53,15 +53,3 @@
 // EXAMPLE:
       // [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
-//
-// let mass = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-// function f4(array){
-//     let massNew =[];
-//     for (let i = 0; i < array.length ; i++) {
-//         for (let item of array) {
-//             massNew.push(array[i]);
-//         }
-//     }
-//     return massNew;
-// }
-// console.log(f4(mass));
