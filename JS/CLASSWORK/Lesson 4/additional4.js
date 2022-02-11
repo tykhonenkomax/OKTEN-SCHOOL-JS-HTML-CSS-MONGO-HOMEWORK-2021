@@ -53,3 +53,16 @@
 // EXAMPLE:
       // [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
+
+// let mass = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+// function f3(array){
+//     let massNew =[];
+//     for (let i = 0; i < array.length ; i++) {
+//         for (let item in array[i]) {
+//             massNew.push(array[i][item])
+//         }
+//     }
+//     return massNew;
+// }
+// console.log(f3(mass));
+
