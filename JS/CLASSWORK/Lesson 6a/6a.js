@@ -79,18 +79,24 @@
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
 // за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
-// let foo4 =(lenght, max)=>{
-//     let newArray = [];
-//     for (let i = 0; i <lenght ; i++) {
-//         newArray.push(Math.floor(Math.random()*max))
-//     }
-//     return newArray
-// }
-// let result = foo4(10,100);
-// console.log(result);
+let foo4 =(lenght, max, callback)=>{
+    let newArray = [];
+    for (let i = 0; i <lenght ; i++) {
+        newArray.push(Math.floor(Math.random()*max))
+    }
+    return newArray.filter((elemArray)=>elemArray%2==0);
 
-// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого, або навпаки в залежності від значення аргументу direction.
-//     let nums = [11,21,3];
+}
+let newArray2 =()=>{
+    return newArray.map(mass=>mass.toString())}
+
+let result = foo4(10,100,newArray);
+console.log(result);
+
+
+// - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
+// або навпаки в залежності від значення аргументу direction.
+// let nums = [11,21,3];
 // sortNums('ascending') // [3,11,21]
 // sortNums('descending') // [21,11,3]
 //
