@@ -1,8 +1,29 @@
-// email valid if @ is not first or last
-// . is not before @ or after @
-// substruction of last index and index of . >= 2
+// - Напишите функцию cutString(str, n), которая делит строку на подстроки, состоящие из n символов.
+// document.writeln(cutString('наслаждение',3)) // [нас,лаж,ден,ие]
 
-// const coursesArray = [
+// const cutString=(str, n)=> {
+//     let newArray = [];
+//     for (let i = 0; i < str.length; i +=n) {
+//         newArray.push(str.slice(i,i+n))
+//     }
+//     return newArray;
+// }
+// document.writeln(cutString('наслаждение',3));
+
+// ---------------------------------ЭТУ ТАСКУ ЕЩЕ НЕ РЕШИЛ ПОКА ДУМАЮ КАК СДЕЛАТЬ------------------------------------
+
+// - Створити функцію-валідатор для адрес електронної пошти. Перевірка повинна включати в себе :данні до знака равлика(@),
+// наявність равлика, крапку яка знаходиться не меньше ніж на 2 символ далі після равлика, функція не чутлива до регістру
+// (some@email.com,SOME@EMAIL.COM,some@EMAIL.com, і тд - однакові значення)
+// Протестувати на значеннях
+// someemail@gmail.com
+// someeMAIL@gmail.com
+// someeMAIL@i.ua
+// some.email@gmail.com
+// -------------------------------------------------------------------------------------------------------------------
+
+// - є масив відсортувати його в спадаючому порядку за кількістю елементів в полі modules
+// let coursesArray = [
 //     {
 //         title: 'JavaScript Complex',
 //         monthDuration: 5,
@@ -73,7 +94,26 @@
 // ];
 //
 // const sortedCourses = coursesArray.sort(function (one, other) {
-//     return one.modules.length - other.modules.length;
+//     return other.modules.length - one.modules.length;
 // });
 //
 // console.log('sorted courses', sortedCourses)
+
+
+// - Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
+//     let symb = "о", str = "Астрономия это наука о небесных объектах";
+// document.writeln(count(str, symb)) // 5
+//
+// const count =(str, stringsearch)=>{
+//     return  str.split("", stringsearch).length;
+// }
+// console.log(count("Астрономия это наука о небесных объектах", 5));;
+
+// // -------------------------------------------------------------------------------------------------------------------
+// - Напишіть функцію cutString(str, n), яка видаляє зайві слова з рядка str, залишивши у ній n слів.
+//     let str = "Сила тяжести приложена к центру масс тела";
+
+// const cutString = (str, n)=>{return  str.split(" ", n);}
+// console.log(cutString("Сила тяжести приложена к центру масс тела", 3));
+
+// -------------------------------------------------------------------------------------------------------------------
