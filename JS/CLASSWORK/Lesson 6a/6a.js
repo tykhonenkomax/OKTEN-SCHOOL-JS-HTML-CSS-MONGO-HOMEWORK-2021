@@ -1,3 +1,4 @@
+// ----------------------------------------------------------------------------------------------------------------
 // - Дано список імен.
 // let n1 = 'Harry..Potter'
 // let n2 = 'Ron---Whisley'
@@ -7,7 +8,7 @@
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
 
-// --------------Не уневерсально като-то даже в ответах, потом попробую сделать валидацию для всех символов---------------
+// --------------Не уневерсально като-то даже в ответах, потом попробую сделать валидацию для всех символов-------------
 
 // let n1 = 'Harry..Potter';
 // let n2 = 'Ron---Whisley'
@@ -24,7 +25,7 @@
 // foo1(n1,n2,n3)
 
 //
-// -----------------------------------------------------------------------------------------------------------------------
+// ---------------------------------------------------------------------------------------------------------------------
 // - створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
 
@@ -39,7 +40,7 @@
 // console.log(result);
 
 
-
+// ----------------------------------------------------------------------------------------------------------------
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відсортувати його за допомоги sort
 
@@ -53,6 +54,8 @@
 // let result = foo3(15, 100);
 // console.log(result);
 
+
+// ----------------------------------------------------------------------------------------------------------------
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати
 // його за допомоги filter, залишивши тільки парні числа
 
@@ -76,6 +79,7 @@
 // let result = foo4(10,100);
 // console.log(result);
 
+// ----------------------------------------------------------------------------------------------------------------
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
 // за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
@@ -92,6 +96,7 @@
 // console.log(result);
 
 
+// ----------------------------------------------------------------------------------------------------------------
 // - створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
 // або навпаки в залежності від значення аргументу direction.
 // let nums = [11,21,3];
@@ -124,6 +129,7 @@
 
 
 
+// ----------------------------------------------------------------------------------------------------------------
 // - є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -167,85 +173,7 @@
 // console.log(filtrArray2(coursesAndDurationArray2));
 
 
-// email valid if @ is not first or last
-// . is not before @ or after @
-// substruction of last index and index of . >= 2
 
-// const coursesArray = [
-//     {
-//         title: 'JavaScript Complex',
-//         monthDuration: 5,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-//     },
-//     {
-//         title: 'Java Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'java core',
-//             'java advanced']
-//     },
-//     {
-//         title: 'Python Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'python core',
-//             'python advanced']
-//     },
-//     {
-//         title: 'QA Complex',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-//     },
-//     {
-//         title: 'FullStack',
-//         monthDuration: 7,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'react',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'node.js',
-//             'python',
-//             'java']
-//     },
-//     {
-//         title: 'Frontend',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-//     }
-// ];
-//
-// const sortedCourses = coursesArray.sort(function (one, other) {
-//     return one.modules.length - other.modules.length;
-// });
-//
-// console.log('sorted courses', sortedCourses)
 
 
 
