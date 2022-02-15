@@ -23,59 +23,59 @@
 
 //
 // ---№ 1 перевожу мыло в масив и реверсую его для удобства обработки------------------------------------------------
-//
-// let mail = 'someemaiml@gmail.com';
-// let mailArray = mail.split('').reverse();
-//
-// // ---№ 2 валидую на наличие @ в мыле--------------------------------------------------------------------------------
-//
-// let earValidation = (a)=>{
-//     if (a.includes('@')){
-//         return 1}
-//  else {return 0}
-//
-// }
-// console.log(earValidation(mailArray));;
-//
+
+let mail = 'someemaiml@gmail.com';
+let mailArray = mail.split('').reverse();
+
+//---№ 2 валидую на наличие @ в мыле--------------------------------------------------------------------------------
+
+let earValidation = (a)=>{
+    if (a.includes('@')){
+        return 1}
+ else {return 0}
+
+}
+console.log(earValidation(mailArray));;
+
 // ---№ 3 валидую что собачка не может быть первой-------------------------------------------------------------------
-// let ear2Validetion =(a)=> {
-//     if (a.indexOf('@') === 0) {
-//         return 0;
-//     } else {
-//         return 1}
-// }
-// console.log(ear2Validetion(mail));
-//
-// ---№ 4 собачка находится на растоянии двух сиволов от точки-------------------------------------------------------
-// let earNearDot =(a)=> {
-//     let distanceIndex = (a.indexOf('@')-a.indexOf('.'));
-//     if (distanceIndex<=2) {
-//         return 0;
-//     } else {
-//         return 1}
-// }
-// console.log(earNearDot(mailArray));
-//
-// // ---№ 5 валидую одной двух или трех букв после точки---------------------------------------------------------------
-//
-// let dotValidetion =(a)=> {
-//     if ((a.indexOf('.') >= 2)) {
-//         return 1}
-//     else {return 0}
-// }
-// console.log(dotValidetion(mailArray));;
-//
-// ---Результат Валидации--------------------------------------------------------------------------------------------
-//
-//
-// const resultValidation=(ear, ear1, earDot, dot)=>{
-// let y =ear + ear1 + earDot + dot;
-//     if ( y === 4) {
-//         return 'Спасибо за регистрацию Приятного пользования!'
-//     }else { return 'Попробуйте еще раз, Ваш e-mail введен некоректно!!!'}
-//
-// }
-// console.log(resultValidation(earValidation(mailArray),ear2Validetion(mail),earNearDot(mailArray),dotValidetion(mailArray)));
+let ear2Validetion =(a)=> {
+    if (a.indexOf('@') === 0) {
+        return 0;
+    } else {
+        return 1}
+}
+console.log(ear2Validetion(mail));
+
+//---№ 4 собачка находится на растоянии двух сиволов от точки-------------------------------------------------------
+let earNearDot =(a)=> {
+    let distanceIndex = (a.indexOf('@')-a.indexOf('.'));
+    if (distanceIndex<=2) {
+        return 0;
+    } else {
+        return 1}
+}
+console.log(earNearDot(mailArray));
+
+// ---№ 5 валидую одной двух или трех букв после точки---------------------------------------------------------------
+
+let dotValidetion =(a)=> {
+    if ((a.indexOf('.') >= 2)) {
+        return 1}
+    else {return 0}
+}
+console.log(dotValidetion(mailArray));;
+
+//---Результат Валидации--------------------------------------------------------------------------------------------
+
+
+const resultValidation=(ear, ear1, earDot, dot)=>{
+let y =ear + ear1 + earDot + dot;
+    if ( y === 4) {
+        return 'Спасибо за регистрацию Приятного пользования!'
+    }else { return 'Попробуйте еще раз, Ваш e-mail введен некоректно!!!'}
+
+}
+console.log(resultValidation(earValidation(mailArray),ear2Validetion(mail),earNearDot(mailArray),dotValidetion(mailArray)));
 
 // ---------------------------------------------------------------------------------------------------------------------
 
