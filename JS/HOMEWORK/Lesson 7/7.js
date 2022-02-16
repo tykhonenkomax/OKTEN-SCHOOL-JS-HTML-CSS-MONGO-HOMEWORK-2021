@@ -13,9 +13,10 @@ function  User(userId, userName, userSurname, userEmail,userPhone){
 
 }
 ////--------------------------------------------------------------------------------------------------------------------
+// створити пустий масив, наповнити його 10 об'єктами new User(....)
+////---------------------------------------------------Варіант №1-------------------------------------------------------
 let freeNewArray = [];
 
-// створити пустий масив, наповнити його 10 об'єктами new User(....)
 let user1 = new User(2574628,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046 );
 freeNewArray.push(user1);
 console.log(freeNewArray);
@@ -57,6 +58,21 @@ freeNewArray.push(user10);
 console.log(freeNewArray);
 
 
+////---------------------------------------------------Варіант №2-------------------------------------------------------
+
+let freeNewArray2 =[
+new User(2574628,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046 ),
+new User(252525, 'Sergey', 'Kolesnik', 'biohazard@gmail.com',0675325252),
+new User(252527, 'Yuriy', 'Laguta', 'laguta.y@gmail.com',0676767678),
+new User(252528, 'Roman', 'Yurchuk', 'yurchuk.r@gmail.com',0676767679),
+new User(252529, 'Igor', 'Igorovich', 'igorovich.i@gmail.com',0676767679),
+new User(252510, 'Mikola', 'Fedechko', 'fedechko.m@gmail.com',0676767680),
+new User(252511, 'Volodya', 'Perun', 'perun.v@gmail.com',0676767681),
+new User(252512, 'Vlad', 'Khalil', 'khalil.v@gmail.com',0676767682),
+new User(252513, 'Valentin', 'Manik', 'Manik.v@gmail.com',0676767682)
+];
+console.log(freeNewArray2);
+
 ////--------------------------------------------------------------------------------------------------------------------
 // 2- Взяти масив з  User[] з попереднього завдання, та відфільтрувати , залишивши тільки об'єкти з парними id (filter)
 
@@ -83,24 +99,24 @@ class Client {
         this.order = order;
     }
 }
-new Client(254516,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046,['apple','cherry','mango','banana','orange']);
-console.log(Client);
+    let resultTask4 = new Client(254516,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046, ['apple','cherry','mango','banana','orange']);
+console.log(resultTask4);
 
 
-////--------------------------------------------------------------------------------------------------------------------
-// 5 створити пустий масив, наповнити його 10 об'єктами Client
+// ////--------------------------------------------------------------------------------------------------------------------
+// // 5 cтворити пустий масив, наповнити його 10 об'єктами Client
 
 let emptyArray =[
-    new Client (2574628,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046),
-    new Client (252525, 'Sergey', 'Kolesnik', 'biohazard@gmail.com',0675325252),
-    new Client (252526, 'Vasil', 'Kucheruk', 'kukr@gmail.com',0676767676),
-    new Client (252527, 'Yuriy', 'Laguta', 'laguta.y@gmail.com',0676767678),
-    new Client (252528, 'Roman', 'Yurchuk', 'yurchuk.r@gmail.com',0676767679),
-    new Client (252529, 'Igor', 'Igorovich', 'igorovich.i@gmail.com',0676767679),
-    new Client (252510, 'Mikola', 'Fedechko', 'fedechko.m@gmail.com',067676768),
-    new Client (252511, 'Volodya', 'Perun', 'perun.v@gmail.com',0676767681),
-    new Client (252512, 'Vlad', 'Khalil', 'khalil.v@gmail.com',0676767682),
-    new Client (252513, 'Valentin', 'Manik', 'Manik.v@gmail.com',0676767682)
+    new Client (2574628,'Max','Tykhonenko','tikhonenko.m@gmail.com', 0676714046,['apple','cherry','mango','banana','orange'] ),
+    new Client (252525, 'Sergey', 'Kolesnik', 'biohazard@gmail.com',0675325252 ,['apple','cherry','mango','banana','orange']),
+    new Client (252526, 'Vasil', 'Kucheruk', 'kukr@gmail.com',0676767676 ,['apple','cherry','mango','banana','orange']),
+    new Client (252527, 'Yuriy', 'Laguta', 'laguta.y@gmail.com',0676767678 ,['apple','cherry','mango','banana','orange']),
+    new Client (252528, 'Roman', 'Yurchuk', 'yurchuk.r@gmail.com',0676767679 ,['apple','cherry','mango','banana','orange']),
+    new Client (252529, 'Igor', 'Igorovich', 'igorovich.i@gmail.com',0676767679 ,['apple','cherry','mango','banana','orange']),
+    new Client (252510, 'Mikola', 'Fedechko', 'fedechko.m@gmail.com',067676768 ,['apple','cherry','mango','banana','orange']),
+    new Client (252511, 'Volodya', 'Perun', 'perun.v@gmail.com',0676767681 ,['apple','cherry','mango','banana','orange']),
+    new Client (252512, 'Vlad', 'Khalil', 'khalil.v@gmail.com',0676767682 ,['apple','cherry','mango','banana','orange']),
+    new Client (252513, 'Valentin', 'Manik', 'Manik.v@gmail.com',0676767682 ,['apple','cherry','mango','banana','orange'])
 ];
 console.log(emptyArray);
 
