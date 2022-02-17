@@ -161,15 +161,111 @@
 //     'относительную важность секции, расположенной после заголовка', new Atributs4('align', 'Определяет выравнивание заголовка.'))
 // console.log(resultTask4);
 //-------------------------------------// -span-------------------------------------------------------------------------
-    class Task5 {
-        constructor(name, description, atributsTeg) {
-            this.name = name;
-            this.description = description;
-            this.atributsTeg = atributsTeg;
-        }
-    }
+// class Task5 {
+//     constructor(name, description, atributsTeg) {
+//         this.name = name;
+//         this.description = description;
+//         this.atributsTeg = atributsTeg;
+//     }
+// }
+//
+// function Atributs6(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
+//     this.atributsTeg1 = atributsTeg1;
+//     this.description1 = description1;
+//     this.atributsTeg2 = atributsTeg2;
+//     this.description2 = description2;
+//     this.atributsTeg3 = atributsTeg3;
+//     this.description3 = description3;
+// }
+//
+// let resultTask5 = new Task5('Тег <span>', 'Тег <span> предназначен для определения строчных элементов документа.',
+//     new Atributs6('accesskey', 'Позволяет получить доступ к элементу с помощью заданного сочетания клавиш.', 'class',
+//         'Определяет имя класса, которое позволяет связать тег со стилевым оформлением.', 'contenteditable', 'Сообщает,' +
+//         ' что элемент доступен для редактирования пользователем.')
+// )
+// console.log(resultTask5);
 
-function Atributs6(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
+//-------------------------------------// -input------------------------------------------------------------------------
+// class Task6 {
+//     constructor(name, discriptione, atributs) {
+//         this.name = name;
+//         this.discriptione = discriptione;
+//         this.atributs = atributs;
+//     }
+// }
+//
+// function Atributs6(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
+//     this.atributsTeg1 = atributsTeg1;
+//     this.description1 = description1;
+//     this.atributsTeg2 = atributsTeg2;
+//     this.description2 = description2;
+//     this.atributsTeg3 = atributsTeg3;
+//     this.description3 = description3;
+// }
+//
+// let resultTask6 = new Task6('Тег <input>', 'Является одним из разносторонних элементов формы и позволяет' +
+//     ' создавать разные элементы интерфейса и обеспечить взаимодействие с пользователем.', new Atributs6('accept',
+//     'Устанавливает фильтр на типы файлов, которые вы можете отправить через поле загрузки файлов.', 'accesskey',
+//     'Переход к элементу с помощью комбинации клавиш.', 'align', 'Определяет выравнивание изображения.'));
+// console.log(resultTask6);
+
+
+//-------------------------------------// -form-------------------------------------------------------------------------
+// class Task7 {
+//     constructor(name, discriptione, atributs) {
+//         this.name = name;
+//         this.discriptione = discriptione;
+//         this.atributs = atributs;
+//     }
+// }
+//
+// function Atributs7(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
+//     this.atributsTeg1 = atributsTeg1;
+//     this.description1 = description1;
+//     this.atributsTeg2 = atributsTeg2;
+//     this.description2 = description2;
+//     this.atributsTeg3 = atributsTeg3;
+//     this.description3 = description3;
+// }
+//
+// let resultTask7 = new Task7('Тег <form>','Устанавливает форму на веб-странице. Форма предназначена для обмена данными ' +
+//     'между пользователем и сервером.', new Atributs7('accept-charset','Устанавливает кодировку, в которой сервер может ' +
+//     'принимать и обрабатывать данные.','action','Адрес программы или документа, который обрабатывает данные формы.',
+//     'autocomplete','Включает автозаполнение полей формы.'));
+// console.log(resultTask7);
+
+//-------------------------------------// -option-----------------------------------------------------------------------
+// class Task8 {
+//     constructor(name, discriptione, atributs) {
+//         this.name = name;
+//         this.discriptione = discriptione;
+//         this.atributs = atributs;
+//     }
+// }
+//
+// function Atributs8(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
+//     this.atributsTeg1 = atributsTeg1;
+//     this.description1 = description1;
+//     this.atributsTeg2 = atributsTeg2;
+//     this.description2 = description2;
+//     this.atributsTeg3 = atributsTeg3;
+//     this.description3 = description3;
+// }
+//
+// let resultTask8 = new Task8('Тег <option>','Определяет отдельные пункты списка, создаваемого с помощью контейнера <select>.',
+//     new Atributs8('disabled','Заблокировать для доступа элемент списка.','label','Указание метки пункта списка.','selected',
+//         'Заранее устанавливает определенный пункт списка выделенным.'));
+// console.log(resultTask8);
+//-------------------------------------// -select-----------------------------------------------------------------------
+class Task9 {
+    constructor(name, discriptione, atributs) {
+        this.name = name;
+        this.discriptione = discriptione;
+        this.atributs = atributs;
+    }
+}
+
+function Atributs9(atributsTeg1, description1, atributsTeg2, description2, atributsTeg3, description3) {
     this.atributsTeg1 = atributsTeg1;
     this.description1 = description1;
     this.atributsTeg2 = atributsTeg2;
@@ -178,17 +274,7 @@ function Atributs6(atributsTeg1, description1, atributsTeg2, description2, atrib
     this.description3 = description3;
 }
 
-let resultTask5 = new Task5('Тег <span>', 'Тег <span> предназначен для определения строчных элементов документа.',
-new Atributs6('accesskey', 'Позволяет получить доступ к элементу с помощью заданного сочетания клавиш.', 'class',
-    'Определяет имя класса, которое позволяет связать тег со стилевым оформлением.', 'contenteditable','Сообщает,' +
-    ' что элемент доступен для редактирования пользователем.')
-)
-console.log(resultTask5);
-
-//-------------------------------------// -input------------------------------------------------------------------------
-
-//-------------------------------------// -form-------------------------------------------------------------------------
-
-//-------------------------------------// -option-----------------------------------------------------------------------
-
-//-------------------------------------// -select-----------------------------------------------------------------------
+let resultTask9 = new Task9('Тег <select>','Позволяет создать элемент интерфейса в виде раскрывающегося списка',
+    new Atributs9('accesskey','Позволяет перейти к списку с помощью некоторого сочетания клавиш.','autofocus',
+        'Устанавливает, что список получает фокус после загрузки страницы.','disabled','Блокирует доступ и изменение элемента.'));
+console.log(resultTask9);
