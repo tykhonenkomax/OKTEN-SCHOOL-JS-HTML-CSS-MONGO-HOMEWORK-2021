@@ -1,20 +1,22 @@
 function UserCard(key) {
-    this.key = key;
-};
+    this.key=key;
+}
 
-function Key(balance, transactionLimit, historyLogs) {
+function Key(balance, transactionLimit, historyLogs, key) {
     this.balance = balance;
     this.transactionLimit = transactionLimit;
     this.historyLogs = historyLogs;
+    this.key = key;
 };
 
 
-let card1 = new UserCard(1, new Key(100,100,[]))
+let card1 = new UserCard(1, new Key(100, 100, [], 1));
 console.log(card1);
-let card2 = new UserCard(2, new Key(100,100,[]))
+let card2 = new UserCard(2, new Key(100, 100, [], 2));
 console.log(card2);
-let card3 = new UserCard(3, new Key(100,100,[]))
+let card3 = new UserCard(3, new Key(100, 100, [], 3));
 console.log(card3);
+
 
 // let card1 = new UserCard(100, 100, [], 1);
 // console.log(card1)
