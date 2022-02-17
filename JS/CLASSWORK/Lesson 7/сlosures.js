@@ -29,12 +29,9 @@ function UserCard(balance,transactionLimit,historyLogs,key){
     this.key = key;
 }
 
-
 let card1 = new UserCard(100, 100, [], 1);
 let card2 = new UserCard(100, 100, [], 2);
 let card3 = new UserCard(100, 100, [], 3);
-
-
 
 function getCardOptions(numberCard) {
 
@@ -46,7 +43,15 @@ function getCardOptions(numberCard) {
         return card3;
     }
 }
-let result =getCardOptions(2);
+function putCredits(newBalans){
+    this.balance = this.balance+newBalans
+}
+putCredits(150);
+
+
+
+
+let result =getCardOptions(3);
 console.log(result);
 
 
