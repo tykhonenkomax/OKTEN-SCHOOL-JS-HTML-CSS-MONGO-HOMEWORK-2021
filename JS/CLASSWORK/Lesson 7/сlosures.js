@@ -44,14 +44,15 @@ function getCardOptions(numberCard) {
     }
 }
 function putCredits(newBalans){
-    this.balance = this.balance+newBalans
+    card1.balance = card1.balance+newBalans
 }
 putCredits(150);
 
 
 
 
-let result =getCardOptions(3);
+
+let result =getCardOptions(1);
 console.log(result);
 
 
