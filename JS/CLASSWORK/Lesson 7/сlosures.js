@@ -22,7 +22,7 @@
 //---------------------------------Вариант №2---------------------------------------------------------------------------
 
 
-function UserCard(balance,transactionLimit,historyLogs,key){
+function UserCard(balance, transactionLimit, historyLogs, key) {
     this.balance = balance;
     this.transactionLimit = transactionLimit;
     this.historyLogs = historyLogs;
@@ -43,16 +43,55 @@ function getCardOptions(numberCard) {
         return card3;
     }
 }
-function putCredits(newBalans){
-    card1.balance = card1.balance+newBalans
+
+function card1TakeCredits(newBalans) {
+    if(card1.balance - newBalans >=0){
+
+    return console.error('У вас достаточно собственных стредств на картре')
+
+} else if (card1.balance - newBalans < 0){
+        return card1.balance = card1.balance - newBalans
+        console.log('Дякуємо що скористались кредитним лімітом, надіюсь не помрете з Голоду')
+    }
 }
-putCredits(150);
+function card2TakeCredits(newBalans) {
+    if(card1.balance - newBalans >=0){
+        return console.error('У вас достаточно собственных стредств на картре')
+
+    } else if (card1.balance - newBalans < 0){
+        return card1.balance = card1.balance - newBalans
+        console.log('Дякуємо що скористались кредитним лімітом, надіюсь не помрете з Голоду')
+    }
+}
+function card3TakeCredits(newBalans) {
+    if(card1.balance - newBalans >=0){
+        return console.error('У вас достаточно собственных стредств на картре')
+    } else if (card1.balance - newBalans < 0){
+        return card1.balance = card1.balance - newBalans
+        console.log('Дякуємо що скористались кредитним лімітом, надіюсь не помрете з Голоду')
+    }
+}
+
+function card1PutCredits(newBalans) {
+    return card1.balance = card1.balance + newBalans
+}
+function card2PutCredits(newBalans) {
+    return card2.balance = card2.balance + newBalans
+}
+function card3PutCredits(newBalans) {
+    return card3.balance = card3.balance + newBalans
+}
+
+
+
+let result = getCardOptions(1);
+card1PutCredits(200);
+card1TakeCredits(500);
 
 
 
 
 
-let result =getCardOptions(1);
 console.log(result);
 
 
