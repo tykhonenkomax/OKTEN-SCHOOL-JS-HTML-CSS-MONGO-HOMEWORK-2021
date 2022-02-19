@@ -43,17 +43,14 @@
 
     /*//--------------------------------------------------------------------------------------------------------------*/
     /*b) робить шириниу елементу ul 400px*/
-    let task2 = document.getElementsByTagName('ul');
-    console.log(task2)
-    task2[0].style.width='400px'
-    task2[0].style.background='tomato' ///підсвітив бо небуло зрозуміло що міняється
     /*//--------------------------------------------------------------------------------------------------------------*/
-    /*c) робить шириниу всіх елементів з класом linkList шириною 50%*/
+    // /*c) робить шириниу всіх елементів з класом linkList шириною 50%*/
     let task3 =document.getElementsByClassName('linkList');
         for (const task3Element of task3) {
-        task3Element.style.border='1px solid black';
-        task3Element.style.width='50%';
-    }
+            task3Element.style.border = '1px solid black';
+            task3Element.style.width = '50%';
+        }
+
     /*//--------------------------------------------------------------------------------------------------------------*/
     /*d) отримує текст який зберігається в елементі з класом listElement2*/
     let task4 = document.getElementsByClassName('listElement2');
@@ -88,22 +85,45 @@
         }
     }
     /*//--------------ось це дуже цікаво що можна звертатись через цикл з промт разом---------------------------------*/
-    /*i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()*!*/
+    // /*i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()*!*/
     let task8 = document.getElementsByClassName('sub-header');
-    console.log(task8)
-
-
-
+    console.log(task8);
+    for (const task8Element of task8) {
+        task8Element.style.color=prompt('Enter your favorite color','Red,Blue,Green');
+        console.log(task8Element)
+    }
 
     /*//--------------------------------------------------------------------------------------------------------------*/
     /*j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .*/
     /* Колір отримати з prompt()*/
+    let task9 = document.getElementsByClassName('sub-header');
+    console.log(task8);
+    for (const task9Element of task9) {
+        if (task9Element.innerText ='content 2 segment'){
+            task9Element.style.color=prompt('Enter your favorite color','Red,Blue,Green')
+            console.log(task9Element)
+        }
+    }
+    /*//--------------------------------------------------------------------------------------------------------------*/
     /*k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()*/
+    let task10 = document.getElementsByClassName('content_1');
+    console.log(task10[0].innerText);
+    task10[0].innerText=prompt('Enter your Text','Bla Bla Bla Bla')
+    /*//--------------------------------------------------------------------------------------------------------------*/
     /*l) отримати елементи p та змінити їм padding на 20px*/
+    let task11 = document.getElementsByTagName('p');
+    console.log(task11)
+    for (const task11Element of task11) {
+        task11Element.style.padding='20px';
+        console.log(task11Element)
+    }
+    /*//--------------------------------------------------------------------------------------------------------------*/
     /*m) отримати елементи з класом text2 та змінити їм текст на назву */
     /*групи (mon-year. Пример sep-2021*/
-
-
+    let task12 =document.getElementsByClassName('text2')
+    console.log(task12)
+    task12[0].innerText='December-2021'
+    /*//--------------------------------------------------------------------------------------------------------------*/
 
 
 </script>
