@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1 id="main_header">This is page for task2</h1>
+<ul>
+    <li class="linkList listElement1"><a href="#">link1</a></li>
+    <li class="linkList listElement2"><a href="#">link2</a></li>
+    <li class="linkList listElement3"><a href="#">link3</a></li>
+</ul>
+<h3 class="sub-header">content 1 segment</h3>
+<div class="content_1">
+    <p class="text_segment text1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem cumque distinctio,
+        dolorem
+        eligendi eum eveniet facere inventore ipsa minus pariatur repellendus sequi sit veniam voluptatum.
+        Fugit,
+        soluta?</p>
+
+</div>
+<h3 class="sub-header">content 2 segment</h3>
+<div class="content_2">
+    <p class="text_segment text2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae, exercitationem modi mollitia
+        omnis
+        possimus quam rerum sequi temporibus tenetur! Accusantium ad commodi eveniet excepturi laboriosam quis
+        quisquam sint temporibus.</p>
+</div>
+
+
+
+<script>
+    /*Взяти файл template_2.html та працювати в ньому*/
+    /*1) Напишіть код, який :*/
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*a) додає клас з назвою групи, елементу з ід main_header*/
+    let task1 = document.getElementById('main_header');
+    task1.innerText='Full Stuck Java Script DECEMBER 2021';
+
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*b) робить шириниу елементу ul 400px*/
+    let task2 = document.getElementsByTagName('ul');
+    console.log(task2)
+    task2[0].style.width='400px'
+    task2[0].style.background='tomato' ///підсвітив бо небуло зрозуміло що міняється
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*c) робить шириниу всіх елементів з класом linkList шириною 50%*/
+    let task3 =document.getElementsByClassName('linkList');
+        for (const task3Element of task3) {
+        task3Element.style.border='1px solid black';
+        task3Element.style.width='50%';
+    }
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*d) отримує текст який зберігається в елементі з класом listElement2*/
+    let task4 = document.getElementsByClassName('listElement2');
+    console.log(task4);
+    task4[0].innerHTML = '<a href=""><b>NEW TEXT</b></a>';
+
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*e) отримує всі елементи li та змінює ім колір фону на сірий*/
+    let task5 = document.getElementsByTagName('li');
+    console.log(task5)
+    for (const task5Element of task5) {
+        task5Element.style.background='grey'
+        task5Element.style.margin = '1px';
+    }
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*f) отримує всі елементи 'a' та додає їм клас anchor*/
+    let task6 = document.getElementsByTagName('a');
+    console.log(task6);
+    for (const task6Element of task6) {
+        task6Element.classList.add('anchor');
+        console.log(task6Element);
+    }
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює */
+    /*link3, змінює йому розмір тексту на 40 пікселів*/
+
+    let task7 = document.getElementsByTagName('a');
+    console.log(task7);
+    for (const task7Element of task7) {
+        if (task7Element.innerText === 'link3'){
+            task7Element.style.fontSize ='40px';
+        }
+    }
+    /*//--------------ось це дуже цікаво що можна звертатись через цикл з промт разом---------------------------------*/
+    /*i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()*!*/
+    let task8 = document.getElementsByClassName('sub-header');
+    console.log(task8)
+
+
+
+
+    /*//--------------------------------------------------------------------------------------------------------------*/
+    /*j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment .*/
+    /* Колір отримати з prompt()*/
+    /*k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()*/
+    /*l) отримати елементи p та змінити їм padding на 20px*/
+    /*m) отримати елементи з класом text2 та змінити їм текст на назву */
+    /*групи (mon-year. Пример sep-2021*/
+
+
+
+
+</script>
+</body>
+</html>
