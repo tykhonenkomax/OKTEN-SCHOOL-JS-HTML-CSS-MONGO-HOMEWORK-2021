@@ -36,96 +36,150 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
+//-------------Походу я тут забагато зробив ніж вимагалось-------------------------------------------------------------
 // Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
-for (const simpson of simpsons) {
-    let div = document.createElement('div');
-    let photoCreator = document.createElement('img');
-    photoCreator.src = simpson.photo;
-    div.append(photoCreator);
-    div.classList.add('member');
-    console.log(div);
-    div.innerHTML = ` NAME: ${simpson.name} <br> SURNAME: ${simpson.surname} <br>  AGE: ${simpson.age} 
-    <br> INFO: ${simpson.info} <br> <img src=" ${simpson.photo}" <br> <br>`;
-    document.body.append(div)
-}
-
-// Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
-//
-//
+// for (const simpson of simpsons) {
+//     let div = document.createElement('div');
+//     let photoCreator = document.createElement('img');
+//     photoCreator.src = simpson.photo;
+//     div.append(photoCreator);
+//     div.classList.add('member');
+//     console.log(div);
+//     div.innerHTML = ` NAME: ${simpson.name} <br> SURNAME: ${simpson.surname} <br>  AGE: ${simpson.age}
+//     <br> INFO: ${simpson.info} <br> <img src=" ${simpson.photo}" <br>`;
+//     document.body.append(div)
+// };
+//---------------------------------------------------------------------------------------------------------------------
 // - взяти попередній масив з сімпсонами.
 //     Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу
 //     створити окремий блок, та помістити його у div.member
-//
+// let newSimpson = [...simpsons]
+// for (const newSimpsonIter of newSimpson) {
+//     let divGeneral = document.createElement('div');
+//     divGeneral.classList.add('member');
+//     let divName=document.createElement('div');
+//     divName.innerHTML=`Name: ${newSimpsonIter.name}`;
+//       let divSurname=document.createElement('div');
+//     divSurname.innerHTML=`Surname: ${newSimpsonIter.surname} `;
+//     let divAge=document.createElement('div')
+//     divAge.innerHTML=`Age: ${newSimpsonIter.age}`
+//     let divInfo=document.createElement('div')
+//     divInfo.innerHTML=`Info: ${newSimpsonIter.info}`
+//     let divPhoto=document.createElement('div');
+//     divPhoto.innerHTML=`Photo: <img src="${newSimpsonIter.photo}">`
+//     divGeneral.append(divName);
+//     divGeneral.append(divSurname);
+//     divGeneral.append(divAge);
+//     divGeneral.append(divInfo);
+//     divGeneral.append(divPhoto);
+//     document.body.append(divGeneral)
+//     console.log(divGeneral)
+// }
+
 // - Є масив
-// let coursesArray = [
-//     {
-//         title: 'JavaScript Complex',
-//         monthDuration: 5,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
-//     },
-//     {
-//         title: 'Java Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'java core',
-//             'java advanced']
-//     },
-//     {
-//         title: 'Python Complex',
-//         monthDuration: 6,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'python core',
-//             'python advanced']
-//     },
-//     {
-//         title: 'QA Complex',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
-//     },
-//     {
-//         title: 'FullStack',
-//         monthDuration: 7,
-//         hourDuration: 909,
-//         modules: ['html',
-//             'css',
-//             'js',
-//             'mysql',
-//             'mongodb',
-//             'react',
-//             'angular',
-//             'aws',
-//             'docker',
-//             'git',
-//             'node.js',
-//             'python',
-//             'java']
-//     },
-//     {
-//         title: 'Frontend',
-//         monthDuration: 4,
-//         hourDuration: 909,
-//         modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
-//     }
-// ];
-// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих
-// властивостей, для властивості modules зробити список з елементами
-// Приклад структири знаходиться у файлі example.png
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+];
+// // Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих
+// // властивостей, для властивості modules зробити список з елементами
+// // Приклад структири знаходиться у файлі example.png
+//
+let array = [...coursesArray];
+for (const arrayIter of array) {
+    console.log(arrayIter)
+
+    let generalDiv = document.createElement('div');
+
+    let div1 = document.createElement('div');
+
+    div1.innerHTML=` <br> ${arrayIter.title}`;
+    //-----------------------------------------
+
+    let div2Box1 = document.createElement('div');
+    div2Box1.innerHTML=`<br> monthDuration: ${arrayIter.monthDuration} hourDuration: ${arrayIter.hourDuration}`;
+
+    //-----------------------------------------
+
+    for (const modulesElement of arrayIter.modules) {
+       let ul = document.createElement('ul');
+       let li = document.createElement('li');
+       li.innerHTML=modulesElement;
+       ul.append(li)
+        document.body.append(ul)
+    }
+    generalDiv.append(div1);
+    div1.append(div2Box1)
+
+
+
+
+document.body.append(generalDiv)
+}
+
+
