@@ -1,15 +1,15 @@
 // написати рекурсивну функцію, яка збирає всі назви класів з файлу rules.html в окремий масив. масив вивести в консоль
 
 
-let box =[];
-function recursia(startElement) {
-    let getChildren = startElement;
-    for (const child of getChildren) {
-        if (child === child.document.getElementsByClassName('name')) {
-            box.push(child)
+let resultTask1 =[];
+function recursia(start){
+    let children =  start.children
+    for (const child of children) {
+        for (const childElement of child.classList) {
+            resultTask1.push(childElement)
         }
-      return box;
+        recursia(child)
     }
 }
-let result = recursia(document.body.children);
-console.log(result)
+recursia(document.body)
+console.log(resultTask1)
