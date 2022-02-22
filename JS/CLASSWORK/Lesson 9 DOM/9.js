@@ -157,6 +157,7 @@ for (const arrayIter of array) {
     let generalDiv = document.createElement('div');
 
     let div1 = document.createElement('div');
+    let ul = document.createElement('ul');
 
     div1.innerHTML=` <br> ${arrayIter.title}`;
     //-----------------------------------------
@@ -165,19 +166,14 @@ for (const arrayIter of array) {
     div2Box1.innerHTML=`<br> monthDuration: ${arrayIter.monthDuration} hourDuration: ${arrayIter.hourDuration}`;
 
     //-----------------------------------------
-
-    for (const modulesElement of arrayIter.modules) {
-       let ul = document.createElement('ul');
+        for (const modulesElement of arrayIter.modules) {
        let li = document.createElement('li');
        li.innerHTML=modulesElement;
        ul.append(li)
         document.body.append(ul)
     }
-    generalDiv.append(div1);
+    generalDiv.append(div1, ul);
     div1.append(div2Box1)
-
-
-
 
 document.body.append(generalDiv)
 }
