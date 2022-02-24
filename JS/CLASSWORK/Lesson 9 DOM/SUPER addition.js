@@ -115,6 +115,40 @@ let users = [{
 // ---------------------------------------------------------------------------------------------------------------------
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам (div>div*4)
+let users3 =[...users];
+let divGeneral = document.createElement('div')
+
+for (const users3Iter1 of users3) {
+
+    let br=document.createElement('br');
+    for (const users3Iter1Key in users3Iter1) {
+        if (users3Iter1Key === 'name'){
+            let div1=document.createElement('div1');
+            div1.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div1);
+        }else if (users3Iter1Key === 'age'){
+            let div2=document.createElement('div2');
+            div2.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div2);
+        }else if (users3Iter1Key === 'status'){
+            let div3=document.createElement('div3');
+            div3.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div3);
+        } else if (users3Iter1Key ==='address'){
+            for (const users3Iter2Key in users3Iter1[users3Iter1Key] ) {
+
+                let div4=document.createElement('div4');
+                div4.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+                divGeneral.append(div4);
+            }
+        }
+    }
+
+divGeneral.append(br)
+}
+document.body.append(divGeneral);
+
+
 // ---------------------------------------------------------------------------------------------------------------------
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
