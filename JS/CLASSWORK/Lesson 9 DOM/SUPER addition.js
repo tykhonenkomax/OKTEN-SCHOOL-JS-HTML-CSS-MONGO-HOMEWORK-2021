@@ -115,9 +115,94 @@ let users = [{
 // ---------------------------------------------------------------------------------------------------------------------
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам (div>div*4)
-// ---------------------------------------------------------------------------------------------------------------------
+// let users3 =[...users];
+// let divGeneral = document.createElement('div')
+//
+// for (const users3Iter1 of users3) {
+//
+//     let br=document.createElement('br');
+//     for (const users3Iter1Key in users3Iter1) {
+//         if (users3Iter1Key === 'name'){
+//             let div1=document.createElement('div1');
+//             div1.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div1);
+//         }else if (users3Iter1Key === 'age'){
+//             let div2=document.createElement('div2');
+//             div2.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div2);
+//         }else if (users3Iter1Key === 'status'){
+//             let div3=document.createElement('div3');
+//             div3.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div3);
+//         } else if (users3Iter1Key ==='address'){
+//             for (const users3Iter2Key in users3Iter1[users3Iter1Key] ) {
+//                 let div4=document.createElement('div4');
+//                 div4.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+//                 divGeneral.append(div4);
+//             }
+//         }
+//     }
+//
+// divGeneral.append(br)
+// }
+// document.body.append(divGeneral);
+
+
+// ------------------СУПЕР ГАВНОКОД ПОПРОБУЮ ЕЩЕ РЕКУРСИЕЦ ЭТО СДЕЛАТЬ----делал так чтоб добить циклы для себя----------
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
+
+
+
+let users4 =[...users];
+let divGeneral = document.createElement('div')
+
+for (const users3Iter1 of users4) {
+
+    let br=document.createElement('br');
+    for (const users3Iter1Key in users3Iter1) {
+        if (users3Iter1Key === 'name'){
+            let div1=document.createElement('div1');
+            div1.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div1);
+        }else if (users3Iter1Key === 'age'){
+            let div2=document.createElement('div2');
+            div2.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div2);
+        }else if (users3Iter1Key === 'status'){
+            let div3=document.createElement('div3');
+            div3.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+            divGeneral.append(div3);
+        } else if (users3Iter1Key ==='address'){
+            let div4General=document.createElement('div4General');
+            for (const users3Iter2Key in users3Iter1[users3Iter1Key] ) {
+
+                if (users3Iter2Key==='city'){
+                    let div4a=document.createElement('div4a');
+                    div4a.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+                    divGeneral.append(div4a);
+                }else if (users3Iter2Key==='country'){
+                    let div4b=document.createElement('div4b');
+                    div4b.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+                    divGeneral.append(div4b);
+                }else if (users3Iter2Key==='street'){
+                let div4c=document.createElement('div4c');
+                div4c.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+                divGeneral.append(div4c);
+                }else if (users3Iter2Key==='houseNumber'){
+                let div4d=document.createElement('div4d');
+                div4d.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+                divGeneral.append(div4d);
+                }
+                divGeneral.append(div4General);
+            }
+        }
+    }
+
+divGeneral.append(br)
+}
+document.body.append(divGeneral);
+
 // ---------------------------------------------------------------------------------------------------------------------
 
 // - є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему
