@@ -152,56 +152,54 @@ let users = [{
 // - За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement,
 // розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
-
-
-let users4 =[...users];
-let divGeneral = document.createElement('div')
-
-for (const users3Iter1 of users4) {
-
-    let br=document.createElement('br');
-    for (const users3Iter1Key in users3Iter1) {
-        if (users3Iter1Key === 'name'){
-            let div1=document.createElement('div1');
-            div1.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
-            divGeneral.append(div1);
-        }else if (users3Iter1Key === 'age'){
-            let div2=document.createElement('div2');
-            div2.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
-            divGeneral.append(div2);
-        }else if (users3Iter1Key === 'status'){
-            let div3=document.createElement('div3');
-            div3.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
-            divGeneral.append(div3);
-        } else if (users3Iter1Key ==='address'){
-            let div4General=document.createElement('div4General');
-            for (const users3Iter2Key in users3Iter1[users3Iter1Key] ) {
-
-                if (users3Iter2Key==='city'){
-                    let div4a=document.createElement('div4a');
-                    div4a.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
-                    divGeneral.append(div4a);
-                }else if (users3Iter2Key==='country'){
-                    let div4b=document.createElement('div4b');
-                    div4b.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
-                    divGeneral.append(div4b);
-                }else if (users3Iter2Key==='street'){
-                let div4c=document.createElement('div4c');
-                div4c.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
-                divGeneral.append(div4c);
-                }else if (users3Iter2Key==='houseNumber'){
-                let div4d=document.createElement('div4d');
-                div4d.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
-                divGeneral.append(div4d);
-                }
-                divGeneral.append(div4General);
-            }
-        }
-    }
-
-divGeneral.append(br)
-}
-document.body.append(divGeneral);
+// let users4 =[...users];
+// let divGeneral = document.createElement('div')
+//
+// for (const users3Iter1 of users4) {
+//
+//     let br=document.createElement('br');
+//     for (const users3Iter1Key in users3Iter1) {
+//         if (users3Iter1Key === 'name'){
+//             let div1=document.createElement('div1');
+//             div1.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div1);
+//         }else if (users3Iter1Key === 'age'){
+//             let div2=document.createElement('div2');
+//             div2.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div2);
+//         }else if (users3Iter1Key === 'status'){
+//             let div3=document.createElement('div3');
+//             div3.innerHTML=`${users3Iter1Key}: ${users3Iter1[users3Iter1Key]} <br>`
+//             divGeneral.append(div3);
+//         } else if (users3Iter1Key ==='address'){
+//             let div4General=document.createElement('div4General');
+//             for (const users3Iter2Key in users3Iter1[users3Iter1Key] ) {
+//
+//                 if (users3Iter2Key==='city'){
+//                     let div4a=document.createElement('div4a');
+//                     div4a.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+//                     divGeneral.append(div4a);
+//                 }else if (users3Iter2Key==='country'){
+//                     let div4b=document.createElement('div4b');
+//                     div4b.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+//                     divGeneral.append(div4b);
+//                 }else if (users3Iter2Key==='street'){
+//                 let div4c=document.createElement('div4c');
+//                 div4c.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+//                 divGeneral.append(div4c);
+//                 }else if (users3Iter2Key==='houseNumber'){
+//                 let div4d=document.createElement('div4d');
+//                 div4d.innerHTML=`${users3Iter2Key}: ${users3Iter1[users3Iter1Key][users3Iter2Key]} <br>`
+//                 divGeneral.append(div4d);
+//                 }
+//                 divGeneral.append(div4General);
+//             }
+//         }
+//     }
+//
+// divGeneral.append(br)
+// }
+// document.body.append(divGeneral);
 
 // ---------------------------------------------------------------------------------------------------------------------
 
@@ -210,6 +208,17 @@ document.body.append(divGeneral);
 //     створити скріпт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li),
 //     який буде змістом того, що знаходиться на сторінці.
 //     Скріпт повинен працювати навіть якщо кількість блоків з заголовком та параграфом зміниться.
+
+// let divId = document.getElementById('content');
+// let h2 = document.getElementsByTagName('h2');
+// let ul = document.createElement('ul')
+// for (const h2Keys of h2) {
+//     let li = document.createElement('li');
+//     li.innerText = h2Keys.innerText;
+//     ul.appendChild(li)
+// }
+// divId.appendChild(ul);
+
 // ---------------------------------------------------------------------------------------------------------------------
 // -Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило
 // в окремому блоці.
@@ -251,3 +260,28 @@ let rules = [
     },
 
 ];
+
+// let newRules =[...rules];
+// let divGeneral = document.createElement('div');
+// divGeneral.classList.add('content')
+// let h1=document.createElement('h2');
+// divGeneral.append(h1);
+// h1.innerText='Правила бойцовского клуба';
+// document.body.append(divGeneral);
+// for (const newRule of newRules) {
+//     for (const newRuleKey in newRule) {
+//         if (newRuleKey ==='title'){
+//             let h2 = document.createElement('h2');
+//             h2.innerHTML=`${newRule[newRuleKey]} <br>`
+//             divGeneral.append(h2)
+//         } else {
+//             let p = document.createElement('p');
+//            p.innerHTML=`${newRule[newRuleKey]} <br>`
+//             divGeneral.append(p)
+//         }
+//        }
+// }
+
+
+
+
