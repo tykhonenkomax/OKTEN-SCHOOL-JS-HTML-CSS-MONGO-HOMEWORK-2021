@@ -23,7 +23,7 @@ let button = document.querySelector('#btn3');
 
 document.querySelector('#btn3').addEventListener('click',()=>{
     let newArray = [];
-    newArray.push(`${modelCar.value} ${typeCar.value} ${volumeCar.value}`)
-    localStorage.setItem('ARRAY', JSON.stringify(newArray))
+    newArray.push(`modelCar: ${modelCar.value}, typeCar: ${typeCar.value}, volumeCar: ${volumeCar.value}.`)
+    localStorage.setItem('CarList', JSON.stringify(newArray))
 })
 
