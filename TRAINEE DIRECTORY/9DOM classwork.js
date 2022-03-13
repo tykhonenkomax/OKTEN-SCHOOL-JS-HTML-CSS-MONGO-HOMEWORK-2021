@@ -135,22 +135,26 @@ let coursesArray = [
 // Приклад структири знаходиться у файлі example.png
 
 let newArray3 = [...coursesArray];
-let div1 = document.createElement('div');
 for (const Element of newArray3) {
-    for (const elementKey in Element) {
+let doc1 = document.createElement('Element')
+let doc2 = document.createElement('h2');
+doc2.innerText=Element.title
+    console.log(doc2)
+    let doc3 = document.createElement('div')
+    doc3.innerText=Element.monthDuration;
+    let doc4 = document.createElement('div')
+    doc4.innerText=Element.hourDuration;
+    let doc5 = document.createElement('ul');
+    console.log(doc5)
 
-        if (elementKey === 'modules'){
-            for (const elementKeyKey of elementKey) {
-                let div2 = document.createElement('div');
-                div2.innerHTML=`${elementKey[elementKeyKey]} `
-                div1.append(div2);
-            } else {
-                let div3 = document.createElement('div')
-                div3.innerHTML=`${Element[elementKey]}`
-                div1.append(div3)
-            }
-        }
-
-               }
+    for (const Element2 of Element.modules) {
+let doc6 = document.createElement('li');
+doc6.innerText=Element2;
+doc5.appendChild(doc6);
     }
-document.body.append(div1)
+    doc1.appendChild(doc2);
+    doc1.appendChild(doc3);
+    doc1.appendChild(doc4);
+    doc1.appendChild(doc5);
+    document.body.appendChild(doc1);
+}
