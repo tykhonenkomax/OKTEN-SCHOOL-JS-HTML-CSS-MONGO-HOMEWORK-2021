@@ -21,7 +21,7 @@ fetch('https://jsonplaceholder.typicode.com/posts').then(responce => {
 
         btn1.innerText = `Read The Comments Id: ${IterationJason.id}`;
         btn1.onclick = () => {
-            fetch('https://jsonplaceholder.typicode.com/comments').then(responceComment => {
+            fetch('https://jsonplaceholder.typicode.com/posts/' + IterationJason.id + '/comments').then(responceComment => {
                 return responceComment.json();
             }).then(jasonResponceComments => {
                 let commentDiv = document.createElement('div');
@@ -30,10 +30,7 @@ fetch('https://jsonplaceholder.typicode.com/posts').then(responce => {
                     email: ${posts.email}<br>
                     name: ${posts.name}<br>
                     `;
-
-                    let commentsResult = document.createElement('div')
-                    commentsResult.innerHTML=commentDiv;
-                    objecktDiv.append(commentsResult)
+                    objecktDiv.append(commentDiv)
 
                 }
             })
