@@ -10,12 +10,14 @@ fetch('https://jsonplaceholder.typicode.com/posts').then(responce => {
 
     for (const IterationJason of jsonResponce) {
         let objecktDiv = document.createElement('div');
+        objecktDiv.classList.add('divClass')
         let btn1 = document.createElement('button');
+        btn1.classList.add('buttonClass')
         objecktDiv.innerHTML = `
-        <h3>UserId: ${IterationJason.userId}</h3>
-        <h5>Id: ${IterationJason.id}<h5>
-        <p>TITLE: ${IterationJason.title}</p> <br>
-        <p>BODY: ${IterationJason.body}</p> <br>
+        <h3 class="h3Class">UserId: ${IterationJason.userId}</h3>
+        <h5 class="h5Class" >Id: ${IterationJason.id}<h5>
+        <p class="p1Class">TITLE: ${IterationJason.title}</p> <br>
+        <p class="p2Class">BODY: ${IterationJason.body}</p> <br>
         `;
 
 
@@ -41,3 +43,5 @@ fetch('https://jsonplaceholder.typicode.com/posts').then(responce => {
 
     }
 });
+
+
