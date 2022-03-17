@@ -4,10 +4,10 @@
 //     кожному елементу юзера створити кнопку, при клику на яку в окремий блок виводяться всі пости поточного юзера.
 //     Кожному елементу post створити кнопку, при клику на яку в окремий блок виводяться всі коментарі поточного поста
 
-fetch('https://jsonplaceholder.typicode.com/users').then((response)=>{
+fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
     return response.json();
-}).then((data)=>{
-let divGeneral = document.createElement('div')
+}).then((data) => {
+    let divGeneral = document.createElement('div')
     for (const object1 of data) {
 
         for (const Key1 in object1) {
@@ -15,37 +15,36 @@ let divGeneral = document.createElement('div')
             if (typeof object1[Key1] !== 'object') {
 
                 let div1 = document.createElement('div');
-                div1.innerHTML=`
+                div1.innerHTML = `
                 ${Key1}: ${object1[Key1]}
                 `
                 divGeneral.append(div1)
-             }else{
+            } else {
                 for (const Key2 in object1[Key1]) {
 
                     let div2 = document.createElement('div');
-                    div2.innerHTML=`
+                    div2.innerHTML = `
                 ${Key2}: ${object1[Key1][Key2]}
                 `
-                    if (typeof object1[Key1][Key2] === 'object'){
+                    if (typeof object1[Key1][Key2] === 'object') {
 
                         for (const key2Key in object1[Key1][Key2]) {
-
-                            let div3 = document.createElement('div');
-                            div3.innerHTML=`
+                            div2.innerHTML = `
                             ${key2Key}: ${object1[Key1][Key2][key2Key]}
                             `
-                            div2.append(div3)
+
                         }
                         divGeneral.append(div2)
                     }
                 }
-
             }
 
+        }
+        document.body.append(divGeneral);
     }
 
-}
-    document.body.append(divGeneral);
 })
+
+
 
 
