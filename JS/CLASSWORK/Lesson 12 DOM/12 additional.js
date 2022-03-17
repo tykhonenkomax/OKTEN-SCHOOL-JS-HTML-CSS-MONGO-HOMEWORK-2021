@@ -7,44 +7,35 @@
 fetch('https://jsonplaceholder.typicode.com/users').then(responce => {
     return responce.json()
 }).then(responceJson => {
-    for (const objectIter of responceJson) {
-        let divObject = document.createElement('div');
-        if (objectIter === 'address') {
-            for (const divObjectKey in objectIter.address) {
-                let objectIter2 = document.createElement('div')
-                objectIter2.innerHTML = `
-        street: ${divObjectKey.street}
-        suite: ${divObjectKey.suite}
-         city: ${divObjectKey.city}
-        zipcode: ${divObjectKey.zipcode}
-        `
-                divObject.append(objectIter2);
+    for (let objectIter of responceJson) {
+        for (let objectIter2 in objectIter) {
+            // console.log(objectIter)
+            let divGeneral = document.createElement('div');
+            if(objectIter2 != 'address' && objectIter2 != 'company') {
+               // console.log(objectIter.address.geo)
+                let div1 = document.createElement('div')
+                div1.innerHTML = `
+                ${objectIter2}: ${objectIter[objectIter2]}`
+                divGeneral.append(div1)
+                }else if (objectIter2 === 'address' && objectIter2 === 'company'){
+                for (const divGeneralElement in objectIter.address.geo) {
+                    console.log(divGeneralElement)
+                    let div2 = document.createElement('div')
+                    div2.innerHTML=`
+                    ${divGeneralElement}:${objectIter.address.geo[divGeneralElement]}
+                    `
+                    div1.append(div2);
 
-            } if (objectIter === 'geo') {
-                for (const divObjectElement in objectIter.geo) {
-                    let objectIter3 = document.createElement('div')
-                    objectIter3.innerHTML = `
-        lat: ${divObjectElement.lat}
-        lng: ${divObjectElement.lng}
-        `
-                    divObject.append(objectIter3);
                 }
-            } else {
-                let objectIter4 = document.createElement('div')
-                objectIter4.innerHTML = `
-                id: ${divObjectKey.id}
-                    name: ${divObjectKey.name}
-                        username: ${divObjectKey.username}
-                            email: ${divObjectKey.email}
-                            `
-                divObject.append(objectIter4);
-                                }
-        }
+            }
 
 
 
 
-        document.body.append(divObject)
+
+
+
+                document.body.append(divGeneral)
     }
 
-})
+}})
