@@ -16,10 +16,6 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
             let btn1 = document.createElement('button');
             btn1.classList.add('btn1')
                 btn1.innerHTML=`BUTTON - ${Key1}`
-            let btn2 = document.createElement('button');
-            btn2.classList.add('btn2')
-            btn2.innerHTML=`BUTTON - ${Key1}`
-
 
 
             if (typeof object1[Key1] !== 'object') {
@@ -35,7 +31,7 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
 
                 let div3 = document.createElement('div');
                 div3.innerHTML = `${Key1}:`
-                div3.append(btn2);
+
                 divGeneral.append(div3)
 
 
@@ -66,7 +62,8 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
                             div4.innerHTML = `
                             ${key2Key}: ${object1[Key1][Key2][key2Key]}
                             `
-                            div4.append(btn2);
+
+
 
 
                         }
