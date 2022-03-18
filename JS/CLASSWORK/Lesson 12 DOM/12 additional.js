@@ -8,20 +8,39 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
     return response.json();
 }).then((data) => {
     let divGeneral = document.createElement('div')
+    divGeneral.classList.add('divGeneral')
     for (const object1 of data) {
 
+
         for (const Key1 in object1) {
-            console.log(Key1)
+            let btn1 = document.createElement('button');
+            btn1.classList.add('btn1')
+                btn1.innerHTML=`BUTTON - ${Key1}`
+            let btn2 = document.createElement('button');
+            btn2.classList.add('btn2')
+            btn2.innerHTML=`BUTTON - ${Key1}`
+
+
 
             if (typeof object1[Key1] !== 'object') {
+
+
                 let div1 = document.createElement('div');
                 div1.innerHTML = `
                 ${Key1}: ${object1[Key1]}`
                 divGeneral.append(div1)
+                div1.append(btn1);
+
             } else {
+
                 let div3 = document.createElement('div');
                 div3.innerHTML = `${Key1}:`
+                div3.append(btn2);
                 divGeneral.append(div3)
+
+
+
+
                 for (const Key2 in object1[Key1]) {
 
 
@@ -29,11 +48,15 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
 
                         let div5 = document.createElement('div');
                         div5.innerHTML = `${Key2}:${object1[Key1][Key2]}`
+                        div5.append(btn1);
                         divGeneral.append(div5)
+
+
                     }
 
                     let div2 = document.createElement('div');
                     div2.innerHTML = `${Key2}:`
+                    div2.append(btn1);
 
                     if (typeof object1[Key1][Key2] === 'object') {
 
@@ -43,16 +66,22 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
                             div4.innerHTML = `
                             ${key2Key}: ${object1[Key1][Key2][key2Key]}
                             `
-                            div2.append(div4)
+                            div4.append(btn2);
+
+
                         }
                         divGeneral.append(div2)
                     }
+
                 }
 
             }
 
+
         }
+
         document.body.append(divGeneral);
+
     }
 
 })
