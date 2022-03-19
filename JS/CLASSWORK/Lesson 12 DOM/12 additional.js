@@ -14,15 +14,39 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
         let btn1 = document.createElement('button');
         let divComments = document.createElement('div');
         divComments.classList.add('posts')
-        btn1.innerHTML='Posts';
-        btn1.onclick=()=>{
-            fetch('https://jsonplaceholder.typicode.com/posts').then(response2=>{
+        btn1.innerHTML = 'Posts';
+        btn1.onclick = () => {
+            fetch('https://jsonplaceholder.typicode.com/posts').then(response2 => {
                 return response2.json();
-            }).then(dataPosts=>{
+            }).then(dataPosts => {
                 for (const dataPost of dataPosts) {
                     for (const postKey in dataPost) {
-                     divComments.innerHTML=`${dataPost[postKey]}`;
+                        divComments.innerHTML = `${dataPost[postKey]}`;
 
+
+                        let divComments2 = document.createElement('div');
+                        divComments2.classList.add('posts')
+                        let divComments2a = document.createElement('div');
+                        divComments2a.classList.add('postsA')
+                        let btn2 = document.createElement('button');
+                        btn2.innerHTML = 'Comments';
+                        btn2.onclick = () => {
+                            fetch('https://jsonplaceholder.typicode.com/comments').then(response3 => {
+                                return response3.json();
+                            }).then(dataComments => {
+                                for (const dataComment of dataComments) {
+                                    for (const CommentKey in dataComment) {
+                                        divComments2.innerHTML = `${dataComment[CommentKey]}`;
+                                        console.log(dataComment[CommentKey])
+
+                                    }
+
+                                }
+                            })
+                        }
+                        divComments.append(divComments2a);
+                        divComments.append(btn2)
+                        divComments.append(divComments2);
 
                     }
 
@@ -49,12 +73,10 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
                 divGeneral.append(div3)
 
 
-
-
                 for (const Key2 in object1[Key1]) {
 
 
-                    if (typeof object1[Key1][Key2] !=='object') {
+                    if (typeof object1[Key1][Key2] !== 'object') {
 
                         let div5 = document.createElement('div');
                         div5.innerHTML = `${Key2}:${object1[Key1][Key2]}`
@@ -77,8 +99,6 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
                             `
 
 
-
-
                         }
 
                         divGeneral.append(div2)
@@ -89,16 +109,15 @@ fetch('https://jsonplaceholder.typicode.com/users').then((response) => {
             }
 
 
-
-
-
-
         }
 
         document.body.append(divGeneral);
 
         divGeneral.append(btn1);
-        divGeneral.append(divComments)
+
+        divGeneral.append(divComments);
+
+
 
     }
 
