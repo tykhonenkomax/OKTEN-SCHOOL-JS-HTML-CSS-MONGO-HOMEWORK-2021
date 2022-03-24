@@ -1,0 +1,83 @@
+1. Привязать к определенной базе в моем случае база tykhonenko;
+
+use tykhonenko;
+
+2. Показать все таблицы в узере который мы вабрали (tykhonenko);
+
+show tables;
+
+3. Выбрать из базы (tykhonenko) нужную нам таблицу в моем случае (cars);
+
+select * from cars;
+
+где:
+
+select - выбрать;
+
+* - все;
+
+from - откуда;
+
+4. Выбрать из базы (tykhonenko) нужную нам таблицу в моем случае (cars) где (year) нужный нам столбчек;
+
+select * from cars where year;
+
+5. select * from cars where year > 2000; больше чем 2000г
+6. select * from cars where year < 2015; меньше чем 2015г
+7.select * from cars where year = 2008 or year = 2009 or year = 2010;
+оператор or (и);
+8. select * from cars where year = 2010; равны (=) 2010г;
+9. select * from cars where model = 'bmw' and year > 2014; когда указываеш конкретный параметр
+из списка например (model) гед модель КОНКРЕТИЗИРУЕМ равно в ковычках название модели;
+and оператор когда добавляем второй параметр поиска;
+10. select * from cars limit 5; лимит первых пять пунктов;
+11. первых 5 после дувух;
+12. select * from cars order by id desc limit 5;
+order by - упорядочить список по возрастанию или убывания я непомню;
+desc - с конца;
+limit 5 - первы 5;
+13. select * from cars	where model like '_a%a_';
+like - Оператор Like используется в предложении WHERE для поиска заданного шаблона в столбце.
+'_a%a_' ищем все что начинается  _ со второй буквы а дальше  % неважно сколко символов дальше а_ и
+имеет предпоследнюю букву а;
+
+нижнее подчеркивание вместо символа;
+% неважно сколько символов;
+а это по какой букве идет запрос;
+14. select * from cars where length(model) >8; ищем машины у которых название больше чем 8 букв;
+
+АГРЕГАТНІ ФУНКЦІЇ
+select max(age) from users; можна переіменувати
+select max(age) as max_age from users;
+
+as - переименовка
+
+min() - select max(age) from users;
+max()
+avg() - середній от слова average
+sum()
+count() - подсчет (*) например всех count(*)
+
+ГРУПУВАНННЯ
+
+выбераем всех с таблицы users  и групируем group by  по гендеру;
+select count(*) from users group by gender;
+можно добавить в селект (зделать колонку )
+
+select count(*), gender from users group by gender;
+
+по конкретному запросу в данному случае модель киа
+
+select avg(price), model from cars where  model = 'Kia' group by model;
+select avg(price) as avg, model from cars where  model;
+
+кількість машин яких найбільше в базі данних
+select count(*) as count, model from cars group by model order by count desc limit 1;
+всі машини по ціні більше ніж середне арефметичне всіх машин
+select * from cars where price < (select avg(price) from cars);
+
+
+ЩОБ ВИДАЛИТИ ТАБЛИЧКУ
+drop table users;
+
+JOIN
